@@ -1,0 +1,4 @@
+// Copy to Config/Local.xcconfig and fill in, then run `xcodegen`.
+// Team ID: Xcode → Settings → Accounts → your Apple ID → Personal Team (10 characters).
+DEVELOPMENT_TEAM = ABCDE12345
+MEALPREP_BUNDLE_ID = dk.yourname.mealprep

@@ -1,0 +1,4 @@
+// Defaults; override in Config/Local.xcconfig (git-ignored).
+MEALPREP_BUNDLE_ID = dk.vlla.mealprep
+DEVELOPMENT_TEAM =
+#include? "Local.xcconfig"
