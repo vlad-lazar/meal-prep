@@ -28,6 +28,9 @@ struct MealDetailView: View {
             VStack(spacing: 0) {
                 header
                 VStack(alignment: .leading, spacing: 24) {
+                    if let credit = PhotoCredits.text(for: recipe.id) {
+                        Text(credit).font(.caption2).foregroundStyle(.secondary).padding(.top, -14)
+                    }
                     stats
                     portionStepper
                     ingredients
@@ -68,12 +71,8 @@ struct MealDetailView: View {
         GeometryReader { geo in
             let minY = geo.frame(in: .scrollView).minY
             ZStack(alignment: .bottomLeading) {
-                recipe.linearGradient
-                Text(recipe.emoji)
-                    .font(.system(size: 120))
-                    .shadow(color: .black.opacity(0.2), radius: 14, y: 10)
-                    .scaleEffect(1 + max(0, minY) / 500)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                RecipePhoto(recipe: recipe, emojiSize: 120)
+                LinearGradient(colors: [.clear, .clear, .black.opacity(0.55)], startPoint: .top, endPoint: .bottom)
                 VStack(alignment: .leading, spacing: 6) {
                     Text(recipe.cuisine.uppercased())
                         .font(.caption.weight(.bold))

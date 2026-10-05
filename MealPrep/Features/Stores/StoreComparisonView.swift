@@ -54,10 +54,9 @@ struct StoreComparisonView: View {
 
     private var header: some View {
         HStack(spacing: 14) {
-            Text(recipe.emoji)
-                .font(.system(size: 36))
+            RecipePhoto(recipe: recipe, emojiSize: 34)
                 .frame(width: 60, height: 60)
-                .background(recipe.linearGradient, in: .rect(cornerRadius: 18))
+                .clipShape(.rect(cornerRadius: 18))
             VStack(alignment: .leading, spacing: 2) {
                 Text(recipe.name).font(.rounded(.headline))
                 Text("\(portions) portions · \(model.locationLabel)")

@@ -11,12 +11,7 @@ struct MealCard: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            recipe.linearGradient
-            Text(recipe.emoji)
-                .font(.system(size: height * 0.3))
-                .shadow(color: .black.opacity(0.18), radius: 8, y: 6)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding(.bottom, height * 0.3)
+            RecipePhoto(recipe: recipe, emojiSize: height * 0.3, emojiBottomInset: height * 0.3)
             info.padding(8)
         }
         .frame(height: height)
