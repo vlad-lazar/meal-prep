@@ -1,0 +1,8 @@
+[
+  {"id":"s-netto","street":"Nørrebrogade 1","city":"København N","zip_code":"2200",
+   "latitude":55.6890,"longitude":12.5530,"dealer_id":"9ba51","branding":{"name":"Netto"}},
+  {"id":"s-bo","street":"Østergade 18","city":"Copenhagen","zip_code":"1100",
+   "latitude":55.6761,"longitude":12.5683,"dealer_id":"6d6aSE","branding":{"name":"Bang & Olufsen"}},
+  {"id":"s-rema","street":"Jagtvej 10","city":null,"zip_code":null,
+   "latitude":55.6950,"longitude":12.5450,"dealer_id":"11deC","branding":{"name":"REMA 1000"}}
+]

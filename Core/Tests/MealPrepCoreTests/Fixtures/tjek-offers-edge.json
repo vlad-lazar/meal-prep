@@ -1,0 +1,22 @@
+[
+  {"id":"ok-range","heading":"Dansk kyllingebrystfilet","description":"1000-1600 g / pk.","dealer_id":"71c90",
+   "dealer":{"name":"Lidl"},"pricing":{"price":64.95,"pre_price":null,"currency":"DKK"},
+   "quantity":{"unit":{"symbol":"g","si":{"symbol":"kg","factor":0.001}},"size":{"from":1000,"to":1600},"pieces":{"from":1,"to":1}},
+   "images":{"thumb":"https://example.com/a.webp"},"run_till":"2026-12-31T22:59:59+0000"},
+  {"id":"ok-cl-multi","heading":"Kokosmælk","description":null,"dealer_id":"9ba51","dealer":{"name":"Netto"},
+   "pricing":{"price":30,"pre_price":40},
+   "quantity":{"unit":{"symbol":"cl"},"size":{"from":40,"to":40},"pieces":{"from":2,"to":2}},
+   "images":null,"run_till":"2026-10-11T21:59:59+0000"},
+  {"id":"no-quantity","heading":"Julefrokost","dealer_id":"bdf5A","dealer":{"name":"føtex"},
+   "pricing":{"price":189},"quantity":null,"run_till":"2026-12-24T22:59:59+0000"},
+  {"id":"unknown-unit","heading":"Persille","dealer_id":"9ba51","dealer":{"name":"Netto"},
+   "pricing":{"price":10},"quantity":{"unit":{"symbol":"bdt"},"size":{"from":1,"to":1}},
+   "run_till":"2026-12-24T22:59:59+0000"},
+  {"id":"no-price","heading":"Løg","dealer_id":"9ba51","dealer":{"name":"Netto"},
+   "pricing":{"price":null},"quantity":{"unit":{"symbol":"kg"},"size":{"from":1,"to":1}},
+   "run_till":"2026-12-24T22:59:59+0000"},
+  {"id":"bad-date","heading":"Løg","dealer_id":"9ba51","dealer":{"name":"Netto"},
+   "pricing":{"price":6},"quantity":{"unit":{"symbol":"kg"},"size":{"from":1,"to":1}},
+   "run_till":"next week"},
+  {"broken":true}
+]

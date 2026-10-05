@@ -7,6 +7,6 @@ let package = Package(
     products: [.library(name: "MealPrepCore", targets: ["MealPrepCore"])],
     targets: [
         .target(name: "MealPrepCore"),
-        .testTarget(name: "MealPrepCoreTests", dependencies: ["MealPrepCore"]),
+        .testTarget(name: "MealPrepCoreTests", dependencies: ["MealPrepCore"], resources: [.copy("Fixtures")]),
     ]
 )
