@@ -1,1 +1,3626 @@
-[]
+[
+ {
+  "id": "chicken-curry",
+  "name": "Chicken curry with rice",
+  "cuisine": "Indian",
+  "emoji": "🍛",
+  "gradient": [
+   "FFB347",
+   "FF6B6B"
+  ],
+  "minutes": 40,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-breast",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "ginger",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "coconut-milk",
+    "amount": 400,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "spinach",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "curry-powder",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garam-masala",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Rinse the rice, then cook it in 600 ml lightly salted water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Chop the onion, garlic and ginger finely. Cut the chicken into bite-size pieces."
+   },
+   {
+    "text": "Heat the oil in a large pan and brown the chicken on all sides. Lift it out.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Fry onion, garlic and ginger in the same pan until soft, then stir in curry powder and garam masala for 1 minute.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Add chopped tomatoes and coconut milk, return the chicken and simmer without a lid.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Stir in the spinach until wilted and season with salt."
+   },
+   {
+    "text": "Divide rice and curry between 4 containers and let cool before closing the lids."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 3 months in the freezer. Reheat 2–3 minutes in the microwave with a splash of water over the rice."
+ },
+ {
+  "id": "chili-con-carne",
+  "name": "Chili con carne with rice",
+  "cuisine": "Mexican",
+  "emoji": "🌶️",
+  "gradient": [
+   "FF5F6D",
+   "FFC371"
+  ],
+  "minutes": 60,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "minced-beef",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "kidney-beans",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tomato-paste",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cumin",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "chili-flakes",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml lightly salted water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Chop onion, garlic and bell pepper."
+   },
+   {
+    "text": "Brown the mince in the oil over high heat, breaking it up.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Add onion, garlic and pepper and fry until soft.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Stir in tomato paste, cumin, paprika and chili flakes for 1 minute."
+   },
+   {
+    "text": "Add chopped tomatoes and the drained beans. Simmer, stirring now and then.",
+    "timerSeconds": 1800
+   },
+   {
+    "text": "Season with salt, then portion with the rice and let cool."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 3 months in the freezer — chili gets better on day two."
+ },
+ {
+  "id": "frikadeller",
+  "name": "Frikadeller with potatoes & carrots",
+  "cuisine": "Danish",
+  "emoji": "🥔",
+  "gradient": [
+   "F7971E",
+   "FFD200"
+  ],
+  "minutes": 50,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "minced-pork-veal",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "flour",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 100,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "potato",
+    "amount": 1000,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Grate the onion finely and mix it with the mince, egg, flour, milk, salt and pepper into a soft farce."
+   },
+   {
+    "text": "Let the farce rest in the fridge so it firms up.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Scrub the potatoes and boil them in salted water until tender.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Cut the carrots into sticks and boil them until just tender.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Shape 12 frikadeller with a wet spoon and fry them in butter and oil on medium heat, turning a few times.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Portion frikadeller, potatoes and carrots and let cool."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Frikadeller freeze well for 2 months; reheat in a pan or microwave."
+ },
+ {
+  "id": "pasta-bolognese",
+  "name": "Pasta bolognese",
+  "cuisine": "Italian",
+  "emoji": "🍝",
+  "gradient": [
+   "E52D27",
+   "B31217"
+  ],
+  "minutes": 45,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "minced-beef",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tomato-paste",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "dried-oregano",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "pasta",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "parmesan",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Chop onion, carrot and garlic finely."
+   },
+   {
+    "text": "Brown the mince in the olive oil over high heat.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Add the vegetables and fry until soft.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Stir in tomato paste, chopped tomatoes and oregano. Simmer gently.",
+    "timerSeconds": 1500
+   },
+   {
+    "text": "Boil the pasta in salted water until al dente.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Mix pasta and sauce, season with salt and portion with grated parmesan on top."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge; the sauce alone freezes for 3 months."
+ },
+ {
+  "id": "teriyaki-salmon",
+  "name": "Teriyaki salmon bowls",
+  "cuisine": "Japanese",
+  "emoji": "🍣",
+  "gradient": [
+   "FF9A8B",
+   "FF6A88"
+  ],
+  "minutes": 30,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "salmon-fillet",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "teriyaki-sauce",
+    "amount": 150,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "broccoli",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cucumber",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "spring-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Heat the oven to 200 °C. Place the salmon on a tray, brush with oil and half the teriyaki sauce."
+   },
+   {
+    "text": "Bake the salmon until it flakes easily.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Steam or boil the broccoli florets until bright green.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Slice the cucumber and spring onion."
+   },
+   {
+    "text": "Build bowls of rice, salmon, broccoli and cucumber; drizzle the rest of the sauce and top with spring onion."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Eat cold or reheat gently — keep the cucumber separate if you reheat."
+ },
+ {
+  "id": "red-lentil-dal",
+  "name": "Red lentil dal",
+  "cuisine": "Indian",
+  "emoji": "🫘",
+  "gradient": [
+   "F6D365",
+   "FDA085"
+  ],
+  "minutes": 35,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "red-lentils",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "coconut-milk",
+    "amount": 400,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "ginger",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "curry-powder",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "spinach",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Fry chopped onion, garlic and ginger in the oil until soft.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Add curry powder and cumin and stir for 1 minute."
+   },
+   {
+    "text": "Add rinsed lentils, tomatoes, coconut milk and 400 ml water. Simmer until the lentils fall apart, stirring often.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Stir in the spinach, season with salt and portion with the rice."
+   }
+  ],
+  "storageTip": "Keeps 5 days in the fridge or 3 months in the freezer. Add a splash of water when reheating."
+ },
+ {
+  "id": "chicken-burrito-bowl",
+  "name": "Chicken burrito bowls",
+  "cuisine": "Mexican",
+  "emoji": "🌯",
+  "gradient": [
+   "56AB2F",
+   "A8E063"
+  ],
+  "minutes": 35,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-breast",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "black-beans",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "corn-canned",
+    "amount": 340,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "taco-spice",
+    "amount": 28,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salsa",
+    "amount": 230,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lime",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Slice the chicken thinly and toss it with the taco seasoning."
+   },
+   {
+    "text": "Fry the chicken in the oil until cooked through.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Fry the sliced pepper in the same pan.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Warm the drained beans and corn.",
+    "timerSeconds": 180
+   },
+   {
+    "text": "Build bowls with rice, chicken, pepper, beans and corn; add salsa and a squeeze of lime."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Add the salsa just before eating to keep things crisp."
+ },
+ {
+  "id": "chicken-shawarma",
+  "name": "Chicken shawarma with bulgur",
+  "cuisine": "Middle Eastern",
+  "emoji": "🥙",
+  "gradient": [
+   "DA4453",
+   "89216B"
+  ],
+  "minutes": 40,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-thigh",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bulgur",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "greek-yogurt",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cucumber",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cumin",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "red-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Mix olive oil, cumin, paprika, cinnamon, salt, 2 grated garlic cloves and half the lemon juice. Coat the chicken."
+   },
+   {
+    "text": "Let the chicken marinate while the oven heats to 220 °C.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Roast the chicken on a tray until charred at the edges.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Pour 500 ml boiling water over the bulgur, cover and leave to soak.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Grate the cucumber, squeeze out the water and mix with yogurt, the last garlic clove and a pinch of salt."
+   },
+   {
+    "text": "Slice the chicken and red onion and portion with bulgur and the garlic yogurt."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Store the yogurt sauce in a separate small pot."
+ },
+ {
+  "id": "overnight-oats",
+  "name": "Overnight oats jars",
+  "cuisine": "Breakfast",
+  "emoji": "🥣",
+  "gradient": [
+   "A1C4FD",
+   "C2E9FB"
+  ],
+  "minutes": 10,
+  "difficulty": 1,
+  "basePortions": 5,
+  "ingredients": [
+   {
+    "ingredientId": "oats",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 500,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "greek-yogurt",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "frozen-berries",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "banana",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "honey",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Stir oats, milk, yogurt, honey and cinnamon together in a bowl."
+   },
+   {
+    "text": "Divide the mixture between 5 jars."
+   },
+   {
+    "text": "Slice the bananas and add them on top with the frozen berries."
+   },
+   {
+    "text": "Close the jars and leave them in the fridge overnight — the berries thaw into the oats."
+   }
+  ],
+  "storageTip": "Keeps 5 days in the fridge. Eat cold straight from the jar."
+ },
+ {
+  "id": "pork-stir-fry",
+  "name": "Pork & veg stir-fry with noodles",
+  "cuisine": "Asian",
+  "emoji": "🥢",
+  "gradient": [
+   "F09819",
+   "EDDE5D"
+  ],
+  "minutes": 25,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "pork-tenderloin",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg-noodles",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "frozen-wok-veg",
+    "amount": 750,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy-sauce",
+    "amount": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "ginger",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "spring-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "honey",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the noodles, then rinse them in cold water.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Slice the pork thinly. Mix soy sauce, honey, grated garlic and ginger."
+   },
+   {
+    "text": "Stir-fry the pork in hot oil until browned. Lift it out.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Stir-fry the frozen vegetables on high heat.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Add the pork, noodles and sauce and toss until glossy.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Portion and top with sliced spring onion."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Reheat in a hot pan or the microwave."
+ },
+ {
+  "id": "veggie-lasagne",
+  "name": "Vegetable lasagne",
+  "cuisine": "Italian",
+  "emoji": "🥬",
+  "gradient": [
+   "11998E",
+   "38EF7D"
+  ],
+  "minutes": 75,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "lasagne-sheets",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "zucchini",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "mushrooms",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "spinach",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 600,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "flour",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cheese-grated",
+    "amount": 175,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "dried-oregano",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Heat the oven to 200 °C. Chop onion, garlic, courgette and mushrooms."
+   },
+   {
+    "text": "Fry the vegetables in olive oil until they lose their water.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add tomatoes, oregano and salt; simmer, then stir in the spinach.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Melt butter, whisk in flour, then milk a little at a time. Simmer to a smooth white sauce.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Layer sauce, sheets and white sauce three times in a dish; finish with cheese."
+   },
+   {
+    "text": "Bake until golden and bubbling.",
+    "timerSeconds": 2100
+   },
+   {
+    "text": "Let it rest before cutting into portions.",
+    "timerSeconds": 600
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 3 months in the freezer, in portions."
+ },
+ {
+  "id": "thai-green-curry",
+  "name": "Thai green curry chicken",
+  "cuisine": "Thai",
+  "emoji": "🥥",
+  "gradient": [
+   "00B09B",
+   "96C93D"
+  ],
+  "minutes": 35,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-thigh",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "green-curry-paste",
+    "amount": 110,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "coconut-milk",
+    "amount": 800,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "broccoli",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lime",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "fresh-coriander",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "soy-sauce",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Fry the curry paste in the oil until fragrant.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Add the chicken in pieces and coat it in the paste.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Pour in the coconut milk and simmer.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Add sliced pepper and broccoli florets and cook until just tender.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Season with lime juice and soy sauce, top with coriander and portion with rice."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 2 months in the freezer."
+ },
+ {
+  "id": "meatballs-tomato",
+  "name": "Meatballs in tomato sauce with pasta",
+  "cuisine": "Italian",
+  "emoji": "🧆",
+  "gradient": [
+   "CB356B",
+   "BD3F32"
+  ],
+  "minutes": 45,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "minced-pork-veal",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "oats",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "dried-oregano",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "pasta",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "parmesan",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Mix mince, egg, oats, half the onion (grated), salt and pepper. Roll about 20 meatballs."
+   },
+   {
+    "text": "Brown the meatballs in olive oil. Lift them out.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Fry the rest of the onion and the garlic, then add tomatoes and oregano.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Return the meatballs and simmer in the sauce.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Boil the pasta until al dente.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Portion pasta, meatballs and sauce with parmesan."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge; meatballs in sauce freeze for 3 months."
+ },
+ {
+  "id": "chicken-sweet-potato-traybake",
+  "name": "Chicken & sweet potato traybake",
+  "cuisine": "Modern",
+  "emoji": "🍠",
+  "gradient": [
+   "FC4A1A",
+   "F7B733"
+  ],
+  "minutes": 45,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-thigh",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "sweet-potato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "red-onion",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "broccoli",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Heat the oven to 220 °C. Cube the sweet potato and cut the onions into wedges."
+   },
+   {
+    "text": "Toss them with oil, paprika and salt on a tray and roast.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Add the chicken thighs, season and roast.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Add the broccoli florets and roast until the chicken is cooked through.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Squeeze lemon over everything and portion."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Reheat in the oven or microwave."
+ },
+ {
+  "id": "tuna-pasta-salad",
+  "name": "Tuna pasta salad",
+  "cuisine": "Modern",
+  "emoji": "🐟",
+  "gradient": [
+   "4FACFE",
+   "00F2FE"
+  ],
+  "minutes": 20,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "pasta",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tuna-canned",
+    "amount": 370,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "corn-canned",
+    "amount": 340,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cucumber",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cherry-tomato",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "greek-yogurt",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "red-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the pasta until al dente, then rinse it in cold water.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Dice the cucumber, halve the tomatoes and chop the red onion finely."
+   },
+   {
+    "text": "Stir yogurt, lemon juice, salt and pepper into a dressing."
+   },
+   {
+    "text": "Mix pasta, drained tuna, corn, vegetables and dressing, then portion."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Eat cold."
+ },
+ {
+  "id": "beef-lasagne",
+  "name": "Classic beef lasagne",
+  "cuisine": "Italian",
+  "emoji": "🧀",
+  "gradient": [
+   "F12711",
+   "F5AF19"
+  ],
+  "minutes": 90,
+  "difficulty": 3,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "lasagne-sheets",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "minced-beef",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tomato-paste",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 600,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cheese-grated",
+    "amount": 175,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "dried-oregano",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Chop onion, carrot and garlic. Brown the mince in olive oil, then add the vegetables.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add tomato paste, tomatoes, oregano and salt and simmer the meat sauce until thick.",
+    "timerSeconds": 1800
+   },
+   {
+    "text": "Heat the oven to 200 °C. Melt butter, whisk in flour, then the milk bit by bit and simmer to a béchamel.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Layer meat sauce, sheets and béchamel three times; finish with béchamel and cheese."
+   },
+   {
+    "text": "Bake until golden.",
+    "timerSeconds": 2400
+   },
+   {
+    "text": "Rest before cutting into portions.",
+    "timerSeconds": 600
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 3 months in the freezer, in portions."
+ },
+ {
+  "id": "butter-chicken",
+  "name": "Butter chicken",
+  "cuisine": "Indian",
+  "emoji": "🧈",
+  "gradient": [
+   "FF8008",
+   "FFC837"
+  ],
+  "minutes": 50,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-thigh",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "greek-yogurt",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garam-masala",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "ginger",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tomato-paste",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cream",
+    "amount": 250,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Mix the chicken pieces with yogurt, half the garam masala and salt."
+   },
+   {
+    "text": "Let the chicken marinate.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Fry the chicken in half the butter until browned. Lift it out.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Fry onion, garlic and ginger in the rest of the butter.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Add tomato paste, tomatoes and the remaining garam masala; simmer.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Stir in the cream, return the chicken and simmer until cooked through. Portion with rice.",
+    "timerSeconds": 480
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 2 months in the freezer."
+ },
+ {
+  "id": "chickpea-spinach-curry",
+  "name": "Chickpea & spinach curry",
+  "cuisine": "Indian",
+  "emoji": "🍲",
+  "gradient": [
+   "F2994A",
+   "F2C94C"
+  ],
+  "minutes": 30,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chickpeas",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "spinach",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "coconut-milk",
+    "amount": 400,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "curry-powder",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Fry chopped onion and garlic in the oil until soft, then add the curry powder.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Add drained chickpeas, tomatoes and coconut milk and simmer.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Stir in the spinach until wilted, season and portion with rice."
+   }
+  ],
+  "storageTip": "Keeps 5 days in the fridge or 3 months in the freezer."
+ },
+ {
+  "id": "cod-potatoes-peas",
+  "name": "Cod with potatoes, peas & lemon",
+  "cuisine": "Danish",
+  "emoji": "🐠",
+  "gradient": [
+   "2193B0",
+   "6DD5ED"
+  ],
+  "minutes": 35,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "cod-fillet",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "amount": 1000,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "frozen-peas",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the potatoes in salted water until tender.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Heat the oven to 200 °C. Put the cod in a dish with knobs of butter, lemon slices, salt and pepper."
+   },
+   {
+    "text": "Bake the cod until it just flakes.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Cook the peas briefly in boiling water.",
+    "timerSeconds": 180
+   },
+   {
+    "text": "Portion cod, potatoes and peas and spoon the lemony butter over."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Reheat gently so the fish stays moist."
+ },
+ {
+  "id": "morbrad-mushroom",
+  "name": "Pork tenderloin in mushroom cream sauce",
+  "cuisine": "Danish",
+  "emoji": "🍄",
+  "gradient": [
+   "8E2DE2",
+   "4A00E0"
+  ],
+  "minutes": 40,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "pork-tenderloin",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "mushrooms",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cream",
+    "amount": 250,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "potato",
+    "amount": 1000,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the potatoes in salted water until tender.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Heat the oven to 180 °C. Season the tenderloin and brown it all over in butter.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Finish the tenderloin in the oven.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Fry sliced mushrooms and onion in the same pan.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Add cream and the stock cube and simmer into a sauce.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Rest the meat, slice it and portion with potatoes and sauce.",
+    "timerSeconds": 300
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Reheat gently with the sauce."
+ },
+ {
+  "id": "hakkeboef",
+  "name": "Hakkebøf with onions & potatoes",
+  "cuisine": "Danish",
+  "emoji": "🍔",
+  "gradient": [
+   "B24592",
+   "F15F79"
+  ],
+  "minutes": 40,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "minced-beef",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "potato",
+    "amount": 1000,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "flour",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cucumber",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the potatoes in salted water until tender.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Slice the onions and fry them slowly in half the butter until golden.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Shape 4 patties, season and fry them in the rest of the butter, turning once.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Whisk flour into the pan juices, add 300 ml water and the stock cube and simmer into gravy.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Portion patties, onions, potatoes and gravy with cucumber slices."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Patties freeze well for 2 months."
+ },
+ {
+  "id": "burning-love",
+  "name": "Brændende kærlighed (bacon & mash)",
+  "cuisine": "Danish",
+  "emoji": "❤️",
+  "gradient": [
+   "EB3349",
+   "F45C43"
+  ],
+  "minutes": 45,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "amount": 1500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bacon",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 200,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Peel and boil the potatoes until soft.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Fry the diced bacon until crisp. Lift it out.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Fry the sliced onions in the bacon fat until golden.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Boil the carrot sticks until tender.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Mash the potatoes with warm milk, butter, salt and pepper."
+   },
+   {
+    "text": "Portion the mash topped with bacon and onions, with carrots on the side."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Add a splash of milk when reheating the mash."
+ },
+ {
+  "id": "egg-fried-rice",
+  "name": "Egg fried rice with veg",
+  "cuisine": "Asian",
+  "emoji": "🍳",
+  "gradient": [
+   "FDC830",
+   "F37335"
+  ],
+  "minutes": 25,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "rice",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 6,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "frozen-peas",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "spring-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "soy-sauce",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 800 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Spread the rice on a tray to cool and dry out.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Stir-fry diced carrot, peas and garlic in hot oil.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Push the veg aside, scramble the eggs in the pan.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Add the rice and soy sauce and fry on high heat until it sizzles.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Top with spring onion and portion."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Reheat until piping hot."
+ },
+ {
+  "id": "peanut-chicken-noodles",
+  "name": "Peanut chicken noodles",
+  "cuisine": "Asian",
+  "emoji": "🥜",
+  "gradient": [
+   "C79081",
+   "DFA579"
+  ],
+  "minutes": 30,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-breast",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg-noodles",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "peanut-butter",
+    "amount": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy-sauce",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lime",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "frozen-wok-veg",
+    "amount": 750,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "honey",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the noodles, then rinse in cold water.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Whisk peanut butter, soy sauce, honey, lime juice, grated garlic and 100 ml hot water into a sauce."
+   },
+   {
+    "text": "Fry the sliced chicken in the oil until cooked through.",
+    "timerSeconds": 420
+   },
+   {
+    "text": "Add the frozen vegetables and stir-fry.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Toss in noodles and peanut sauce and portion."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Loosen with a little water when reheating."
+ },
+ {
+  "id": "chicken-fajita-wraps",
+  "name": "Chicken fajita wraps",
+  "cuisine": "Mexican",
+  "emoji": "🫔",
+  "gradient": [
+   "F857A6",
+   "FF5858"
+  ],
+  "minutes": 30,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-breast",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tortillas",
+    "amount": 8,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "red-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "taco-spice",
+    "amount": 28,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "greek-yogurt",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cheese-grated",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Slice chicken, peppers and onion into strips; toss the chicken with the taco seasoning."
+   },
+   {
+    "text": "Fry the chicken in hot oil.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Add peppers and onion and fry until soft at the edges.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Pack the filling in containers with yogurt and cheese on the side."
+   },
+   {
+    "text": "When eating: warm the tortillas and fill them."
+   }
+  ],
+  "storageTip": "Filling keeps 4 days in the fridge. Store tortillas separately so they don't go soggy."
+ },
+ {
+  "id": "bean-sweet-potato-chili",
+  "name": "Black bean & sweet potato chili",
+  "cuisine": "Mexican",
+  "emoji": "🫑",
+  "gradient": [
+   "834D9B",
+   "D04ED6"
+  ],
+  "minutes": 50,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "black-beans",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "kidney-beans",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "sweet-potato",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cumin",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "chili-flakes",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Fry chopped onion and garlic in the oil, then add the spices.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Add diced sweet potato, tomatoes and 200 ml water and simmer.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Add both kinds of beans and simmer until the sweet potato is soft.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Season and portion with rice."
+   }
+  ],
+  "storageTip": "Keeps 5 days in the fridge or 3 months in the freezer."
+ },
+ {
+  "id": "shakshuka",
+  "name": "Shakshuka with feta",
+  "cuisine": "Middle Eastern",
+  "emoji": "🍅",
+  "gradient": [
+   "ED213A",
+   "93291E"
+  ],
+  "minutes": 30,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "eggs",
+    "amount": 8,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cumin",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "feta",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Fry sliced onion and peppers in olive oil until soft.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add garlic, cumin and paprika, then the tomatoes. Simmer until thick.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Make 8 hollows and crack in the eggs. Cover and cook until the whites set.",
+    "timerSeconds": 420
+   },
+   {
+    "text": "Crumble feta over and divide between containers."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Reheat gently; the yolks will firm up."
+ },
+ {
+  "id": "greek-chicken-rice",
+  "name": "Greek lemon chicken with rice & tzatziki",
+  "cuisine": "Greek",
+  "emoji": "🫒",
+  "gradient": [
+   "3A7BD5",
+   "00D2FF"
+  ],
+  "minutes": 45,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-thigh",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "dried-oregano",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "greek-yogurt",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cucumber",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cherry-tomato",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "feta",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Marinate the chicken in olive oil, lemon juice, 2 grated garlic cloves, oregano and salt.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Heat the oven to 220 °C and roast the chicken.",
+    "timerSeconds": 1500
+   },
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Make tzatziki: grated cucumber squeezed dry, yogurt, the last garlic clove and a pinch of salt."
+   },
+   {
+    "text": "Portion chicken, rice, halved tomatoes and feta, with tzatziki on the side."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Keep the tzatziki in a separate pot."
+ },
+ {
+  "id": "beef-goulash",
+  "name": "Beef goulash with potatoes",
+  "cuisine": "Hungarian",
+  "emoji": "🥘",
+  "gradient": [
+   "870000",
+   "190A05"
+  ],
+  "minutes": 120,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "beef-stew",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tomato-paste",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "potato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Brown the beef in batches in the oil.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add the chopped onions and fry until soft.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Stir in paprika and tomato paste, then 750 ml water and the stock cube."
+   },
+   {
+    "text": "Cover and simmer gently until the beef is tender.",
+    "timerSeconds": 4500
+   },
+   {
+    "text": "Add diced pepper and potatoes and simmer until the potatoes are done.",
+    "timerSeconds": 1500
+   },
+   {
+    "text": "Season and portion."
+   }
+  ],
+  "storageTip": "Keeps 5 days in the fridge or 3 months in the freezer."
+ },
+ {
+  "id": "salmon-broccoli-pasta",
+  "name": "Creamy salmon & broccoli pasta",
+  "cuisine": "Italian",
+  "emoji": "🐟",
+  "gradient": [
+   "FF758C",
+   "FF7EB3"
+  ],
+  "minutes": 25,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "salmon-fillet",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "pasta",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "broccoli",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cream",
+    "amount": 250,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the pasta; add the broccoli florets for the last 3 minutes.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Fry the salmon in cubes in olive oil until just cooked.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Add garlic, cream, lemon zest and juice and simmer briefly.",
+    "timerSeconds": 180
+   },
+   {
+    "text": "Toss with the drained pasta and broccoli, season and portion."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Reheat with a splash of water."
+ },
+ {
+  "id": "shrimp-coconut-curry",
+  "name": "Prawn & veg coconut curry",
+  "cuisine": "Thai",
+  "emoji": "🍤",
+  "gradient": [
+   "F7797D",
+   "FBD786"
+  ],
+  "minutes": 30,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "shrimp",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "coconut-milk",
+    "amount": 800,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "green-curry-paste",
+    "amount": 110,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "zucchini",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "lime",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy-sauce",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Fry the curry paste in the oil until fragrant.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Add coconut milk, courgette and pepper and simmer.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add the thawed prawns and simmer until pink.",
+    "timerSeconds": 180
+   },
+   {
+    "text": "Season with lime and soy sauce and portion with rice."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Don't freeze — the prawns go rubbery."
+ },
+ {
+  "id": "spinach-feta-muffins",
+  "name": "Spinach & feta egg muffins",
+  "cuisine": "Breakfast",
+  "emoji": "🧁",
+  "gradient": [
+   "43E97B",
+   "38F9D7"
+  ],
+  "minutes": 30,
+  "difficulty": 1,
+  "basePortions": 5,
+  "ingredients": [
+   {
+    "ingredientId": "eggs",
+    "amount": 10,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "spinach",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "feta",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "red-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cherry-tomato",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 100,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Heat the oven to 180 °C and oil a 12-hole muffin tin."
+   },
+   {
+    "text": "Chop spinach and onion, quarter the tomatoes and crumble the feta into the holes."
+   },
+   {
+    "text": "Whisk eggs, milk, salt and pepper and pour over the filling."
+   },
+   {
+    "text": "Bake until set and lightly golden.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Cool on a rack and pack 2–3 muffins per container."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 2 months in the freezer. Eat cold or warm 30 seconds."
+ },
+ {
+  "id": "mushroom-risotto",
+  "name": "Mushroom risotto",
+  "cuisine": "Italian",
+  "emoji": "🍚",
+  "gradient": [
+   "757F9A",
+   "D7DDE8"
+  ],
+  "minutes": 45,
+  "difficulty": 3,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "arborio-rice",
+    "amount": 350,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "mushrooms",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "parmesan",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Dissolve the stock cubes in 1.2 l hot water and keep it warm."
+   },
+   {
+    "text": "Fry the sliced mushrooms in olive oil until golden. Lift half out.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Add onion and garlic and fry until soft.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Add the rice and toast it, stirring.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Add the stock one ladle at a time, stirring until each is absorbed, until the rice is creamy but al dente.",
+    "timerSeconds": 1080
+   },
+   {
+    "text": "Stir in butter, parmesan and the reserved mushrooms; rest with a lid on, then portion.",
+    "timerSeconds": 120
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Reheat with a little water and stir well."
+ },
+ {
+  "id": "chicken-noodle-soup",
+  "name": "Chicken noodle soup",
+  "cuisine": "Asian",
+  "emoji": "🍜",
+  "gradient": [
+   "FFAFBD",
+   "FFC3A0"
+  ],
+  "minutes": 40,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-breast",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg-noodles",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "ginger",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "soy-sauce",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "spring-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Fry sliced ginger and garlic in the oil in a large pot.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Add 2 l water and the stock cubes and bring to the boil."
+   },
+   {
+    "text": "Poach the whole chicken breasts in the broth, then lift them out and shred.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Add sliced carrots and simmer.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Add the noodles and cook until soft.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Return the chicken, season with soy sauce and top with spring onion."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. The noodles soak up broth — add water when reheating."
+ },
+ {
+  "id": "stuffed-peppers",
+  "name": "Stuffed peppers with mince & rice",
+  "cuisine": "Modern",
+  "emoji": "🫑",
+  "gradient": [
+   "56CCF2",
+   "2F80ED"
+  ],
+  "minutes": 60,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 4,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "minced-beef",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cheese-grated",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "dried-oregano",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 300 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Heat the oven to 200 °C. Halve the peppers lengthwise and remove the seeds."
+   },
+   {
+    "text": "Brown the mince with chopped onion in olive oil.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Stir in tomatoes, oregano, salt and the rice."
+   },
+   {
+    "text": "Fill the pepper halves, cover with foil and bake.",
+    "timerSeconds": 1500
+   },
+   {
+    "text": "Uncover, sprinkle with cheese and bake until golden.",
+    "timerSeconds": 300
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Reheat in the microwave."
+ },
+ {
+  "id": "cashew-chicken",
+  "name": "Cashew chicken",
+  "cuisine": "Chinese",
+  "emoji": "🥡",
+  "gradient": [
+   "E96443",
+   "904E95"
+  ],
+  "minutes": 30,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-breast",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cashews",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "soy-sauce",
+    "amount": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "ginger",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cook the rice in 600 ml water with a lid on.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Toast the cashews in a dry pan until golden. Set aside.",
+    "timerSeconds": 180
+   },
+   {
+    "text": "Toss the chicken pieces in flour and stir-fry them in hot oil.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Add pepper and onion and stir-fry.",
+    "timerSeconds": 180
+   },
+   {
+    "text": "Add garlic, ginger, soy sauce, honey and 4 tbsp water; toss until glossy.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Stir in the cashews and portion with rice."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. Keep the cashews separate if you like them crunchy."
+ },
+ {
+  "id": "chicken-pasta-bake",
+  "name": "Chicken pasta bake",
+  "cuisine": "Italian",
+  "emoji": "🧀",
+  "gradient": [
+   "FF512F",
+   "DD2476"
+  ],
+  "minutes": 45,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-breast",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "pasta",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cream",
+    "amount": 250,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "mozzarella",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "spinach",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "dried-oregano",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Heat the oven to 200 °C. Boil the pasta 2 minutes short of al dente.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Fry the diced chicken in olive oil until browned.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Add garlic, tomatoes, cream and oregano and simmer.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Stir in spinach and the drained pasta, tip into a dish and tear mozzarella over."
+   },
+   {
+    "text": "Bake until bubbling and golden.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Portion once slightly cooled."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 2 months in the freezer."
+ },
+ {
+  "id": "fiskefrikadeller",
+  "name": "Fiskefrikadeller with potato salad",
+  "cuisine": "Danish",
+  "emoji": "🐡",
+  "gradient": [
+   "1FA2FF",
+   "12D8FA"
+  ],
+  "minutes": 60,
+  "difficulty": 3,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "cod-fillet",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "flour",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 50,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "potato",
+    "amount": 1000,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "greek-yogurt",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "red-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the potatoes until just tender, then let them cool.",
+    "timerSeconds": 1080
+   },
+   {
+    "text": "Chop the cod finely (or blitz it) with the onion, egg, flour, milk, salt and pepper."
+   },
+   {
+    "text": "Rest the fish farce in the fridge so it holds together.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Fry spoonfuls of farce in butter on medium heat until golden on both sides.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Slice the potatoes and mix with yogurt, chopped red onion, lemon juice, salt and pepper."
+   },
+   {
+    "text": "Portion fishcakes with potato salad and a lemon wedge."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge. Eat the fishcakes cold or warm them in a pan."
+ },
+ {
+  "id": "pasta-carbonara",
+  "name": "Pasta carbonara",
+  "cuisine": "Italian",
+  "emoji": "🥓",
+  "gradient": [
+   "E0C3FC",
+   "8EC5FC"
+  ],
+  "minutes": 25,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "pasta",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bacon",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 4,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "parmesan",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Boil the pasta in salted water; save a cup of the water.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Fry the diced bacon until crisp.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Whisk eggs, grated parmesan and plenty of pepper."
+   },
+   {
+    "text": "Off the heat, toss pasta with bacon, then the egg mix and a splash of pasta water until silky."
+   },
+   {
+    "text": "Portion straight away."
+   }
+  ],
+  "storageTip": "Best within 2 days in the fridge. Reheat gently with a splash of water so the egg doesn't scramble."
+ },
+ {
+  "id": "breakfast-burritos",
+  "name": "Breakfast burritos",
+  "cuisine": "Breakfast",
+  "emoji": "🌮",
+  "gradient": [
+   "FFE259",
+   "FFA751"
+  ],
+  "minutes": 25,
+  "difficulty": 1,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "eggs",
+    "amount": 8,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "tortillas",
+    "amount": 8,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cheese-grated",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salsa",
+    "amount": 230,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "avocado",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "black-beans",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Fry the diced pepper in the oil.",
+    "timerSeconds": 240
+   },
+   {
+    "text": "Add the drained beans and warm them through.",
+    "timerSeconds": 120
+   },
+   {
+    "text": "Whisk and scramble the eggs softly with salt.",
+    "timerSeconds": 180
+   },
+   {
+    "text": "Fill the tortillas with eggs, beans, cheese and salsa and roll them up tightly."
+   },
+   {
+    "text": "Wrap each burrito in foil or baking paper. Slice avocado fresh when eating."
+   }
+  ],
+  "storageTip": "Keeps 3 days in the fridge or 2 months in the freezer. Reheat wrapped in a dry pan or the microwave."
+ },
+ {
+  "id": "barbacoa-tacos",
+  "name": "Slow-cooked beef barbacoa tacos",
+  "cuisine": "Mexican",
+  "emoji": "🌮",
+  "gradient": [
+   "0F2027",
+   "2C5364"
+  ],
+  "minutes": 180,
+  "difficulty": 3,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "beef-stew",
+    "amount": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tortillas",
+    "amount": 8,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "red-onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "lime",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cumin",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "chili-flakes",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 4,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "tomato-paste",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "avocado",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "fresh-coriander",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "salsa",
+    "amount": 230,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Heat the oven to 160 °C. Rub the beef with cumin, paprika, chili, salt and crushed garlic."
+   },
+   {
+    "text": "Brown the beef in olive oil in an ovenproof pot.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add tomato paste, the juice of one lime, the stock cube and 400 ml water. Cover and braise in the oven.",
+    "timerSeconds": 9000
+   },
+   {
+    "text": "Meanwhile slice the red onion thinly and pickle it in the juice of the other lime with a pinch of salt.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Shred the beef with two forks into its juices."
+   },
+   {
+    "text": "Pack beef, pickled onion and salsa; assemble with warm tortillas, avocado and coriander when eating."
+   }
+  ],
+  "storageTip": "Beef keeps 4 days in the fridge or 3 months in the freezer. Keep tortillas and avocado separate."
+ }
+]
