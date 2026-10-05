@@ -84,7 +84,7 @@ for rid, query in QUERIES.items():
             curl(meal["strMealThumb"], f"{out_dir}/{rid}/0.jpg")
             picks.append({"file": f"{rid}/0.jpg", "title": meal["strMeal"], "creator": "TheMealDB",
                           "license": "TheMealDB", "page": f"https://www.themealdb.com/meal/{meal['idMeal']}"})
-    params = urllib.parse.urlencode({"q": query, "license": "cc0,by,by-sa,pdm", "source": "flickr,rawpixel,stocksnap",
+    params = urllib.parse.urlencode({"q": query, "license": "cc0,by,by-sa,pdm", "source": os.environ.get("OPENVERSE_SOURCES", "flickr,rawpixel,stocksnap"),
                                      "aspect_ratio": "wide", "page_size": 20})
     for item in get_json(f"https://api.openverse.org/v1/images/?{params}").get("results", []):
         if (item.get("width") or 0) < 900 or len(picks) >= PER_RECIPE:

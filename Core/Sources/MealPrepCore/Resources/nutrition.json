@@ -78,5 +78,11 @@
   {"id": "salsa", "name": "Salsa", "fridaId": null, "per100g": {"kcal": 36, "protein": 1.5, "carbs": 7, "fat": 0.2, "fibre": 1.5}},
   {"id": "peanut-butter", "name": "Peanutbutter", "fridaId": null, "per100g": {"kcal": 600, "protein": 25, "carbs": 15, "fat": 50, "fibre": 6}},
   {"id": "frozen-berries", "name": "Frosne bær", "fridaId": null, "per100g": {"kcal": 50, "protein": 1, "carbs": 9, "fat": 0.4, "fibre": 4}},
-  {"id": "cashews", "name": "Cashewnødder", "fridaId": null, "per100g": {"kcal": 580, "protein": 18, "carbs": 27, "fat": 46, "fibre": 3.3}}
+  {"id": "cashews", "name": "Cashewnødder", "fridaId": null, "per100g": {"kcal": 580, "protein": 18, "carbs": 27, "fat": 46, "fibre": 3.3}},
+  {"id": "polenta", "name": "Polenta / majsmel", "fridaId": null, "per100g": {"kcal": 362, "protein": 8, "carbs": 77, "fat": 3.6, "fibre": 7}},
+  {"id": "creme-fraiche", "name": "Creme fraiche", "fridaId": null, "per100g": {"kcal": 190, "protein": 2.8, "carbs": 3.5, "fat": 18, "fibre": 0}},
+  {"id": "dill", "name": "Dild", "fridaId": null, "per100g": {"kcal": 43, "protein": 3.5, "carbs": 7, "fat": 1, "fibre": 2.1}},
+  {"id": "parsley", "name": "Persille", "fridaId": null, "per100g": {"kcal": 36, "protein": 3, "carbs": 6, "fat": 0.8, "fibre": 3.3}},
+  {"id": "pork-neck", "name": "Svinenakke", "fridaId": null, "per100g": {"kcal": 200, "protein": 18, "carbs": 0, "fat": 14, "fibre": 0}},
+  {"id": "cottage-cheese", "name": "Hytteost", "fridaId": null, "per100g": {"kcal": 95, "protein": 12, "carbs": 2.5, "fat": 4, "fibre": 0}}
 ]

@@ -3622,5 +3622,487 @@
    }
   ],
   "storageTip": "Beef keeps 4 days in the fridge or 3 months in the freezer. Keep tortillas and avocado separate."
+ },
+ {
+  "id": "zeama",
+  "name": "Zeamă (Moldovan chicken noodle soup)",
+  "cuisine": "Moldovan",
+  "emoji": "🍜",
+  "gradient": [
+   "F9D423",
+   "FF4E50"
+  ],
+  "minutes": 60,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "chicken-thigh",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg-noodles",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "dill",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "parsley",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Put the chicken in a pot with 2 l cold water, bring to the boil and skim off the foam.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Add the stock cubes, the whole onion and half the parsley stalks; simmer gently.",
+    "timerSeconds": 1800
+   },
+   {
+    "text": "Lift out the chicken and onion. Shred the meat and discard skin and bones."
+   },
+   {
+    "text": "Add sliced carrots and diced pepper to the broth and simmer.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add the noodles and cook until soft.",
+    "timerSeconds": 300
+   },
+   {
+    "text": "Return the chicken, sour the soup with lemon juice and season with salt and pepper."
+   },
+   {
+    "text": "Stir in plenty of chopped dill and parsley, then portion."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge. The noodles soak up broth — add a splash of water when reheating. Traditionally served with a spoon of smântână (crème fraîche)."
+ },
+ {
+  "id": "ciorba-perisoare",
+  "name": "Ciorbă de perișoare (meatball soup)",
+  "cuisine": "Moldovan",
+  "emoji": "🥣",
+  "gradient": [
+   "FF9966",
+   "FF5E62"
+  ],
+  "minutes": 60,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "minced-pork-veal",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "carrot",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "parsley",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "dill",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "lemon",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "stock-cube",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Bring 2 l water with the stock cubes to the boil. Add diced onion, carrots and pepper and simmer.",
+    "timerSeconds": 600
+   },
+   {
+    "text": "Mix the mince with the rinsed rice, egg, half the chopped parsley, salt and pepper."
+   },
+   {
+    "text": "Roll small meatballs (about 25) with wet hands and drop them into the simmering broth."
+   },
+   {
+    "text": "Add the chopped tomatoes and simmer gently until the rice in the meatballs is cooked.",
+    "timerSeconds": 1500
+   },
+   {
+    "text": "Sour with lemon juice to taste and stir in the rest of the parsley and the dill."
+   },
+   {
+    "text": "Portion and let cool before closing the lids."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 3 months in the freezer. Serve with a spoon of crème fraîche."
+ },
+ {
+  "id": "parjoale",
+  "name": "Pârjoale with mashed potatoes",
+  "cuisine": "Moldovan",
+  "emoji": "🍖",
+  "gradient": [
+   "C33764",
+   "1D2671"
+  ],
+  "minutes": 50,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "minced-pork-veal",
+    "amount": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "dill",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "parsley",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "flour",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "amount": 1200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "milk",
+    "amount": 150,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cucumber",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "black-pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Peel the potatoes and boil them in salted water until soft.",
+    "timerSeconds": 1200
+   },
+   {
+    "text": "Grate the onion and garlic and mix with the mince, egg, chopped dill and parsley, salt and pepper."
+   },
+   {
+    "text": "Shape 8 oval patties and roll them in flour."
+   },
+   {
+    "text": "Fry the patties in oil on medium heat, turning a few times, until cooked through.",
+    "timerSeconds": 720
+   },
+   {
+    "text": "Mash the potatoes with warm milk, butter and salt."
+   },
+   {
+    "text": "Portion pârjoale with mash and cucumber slices."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge; pârjoale freeze well for 2 months. Reheat in a pan or the microwave."
+ },
+ {
+  "id": "tocanita-mamaliga",
+  "name": "Tocăniță with mămăligă",
+  "cuisine": "Moldovan",
+  "emoji": "🍲",
+  "gradient": [
+   "F2C94C",
+   "F2994A"
+  ],
+  "minutes": 90,
+  "difficulty": 2,
+  "basePortions": 4,
+  "ingredients": [
+   {
+    "ingredientId": "pork-neck",
+    "amount": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "bell-pepper",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "canned-tomato",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "amount": 3,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "paprika",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "polenta",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "feta",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "creme-fraiche",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Cut the pork into chunks and brown it in the oil in a heavy pot.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Add sliced onions and peppers and fry until soft.",
+    "timerSeconds": 480
+   },
+   {
+    "text": "Stir in garlic and paprika, add the tomatoes and 300 ml water. Cover and simmer until tender.",
+    "timerSeconds": 3600
+   },
+   {
+    "text": "For the mămăligă: bring 1.2 l salted water to the boil and whisk in the cornmeal in a thin stream."
+   },
+   {
+    "text": "Cook the mămăligă on low heat, stirring often, until thick and smooth. Stir in the butter.",
+    "timerSeconds": 900
+   },
+   {
+    "text": "Portion stew and mămăligă; top the mămăligă with crumbled feta and a spoon of crème fraîche."
+   }
+  ],
+  "storageTip": "Stew keeps 5 days in the fridge or 3 months in the freezer. Mămăligă firms up when cold — slice and fry or microwave it."
+ },
+ {
+  "id": "placinte-branza",
+  "name": "Plăcinte cu brânză (cheese pastries)",
+  "cuisine": "Moldovan",
+  "emoji": "🥟",
+  "gradient": [
+   "FDEB71",
+   "F8D800"
+  ],
+  "minutes": 75,
+  "difficulty": 3,
+  "basePortions": 5,
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggs",
+    "amount": 2,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "cottage-cheese",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "feta",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "dill",
+    "amount": 1,
+    "unit": "pcs"
+   },
+   {
+    "ingredientId": "rapeseed-oil",
+    "amount": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "text": "Knead flour, 300 ml warm water, 2 tbsp oil and salt into a soft dough. Cover and rest.",
+    "timerSeconds": 1800
+   },
+   {
+    "text": "Drain the cottage cheese, then mix it with crumbled feta, the eggs and chopped dill."
+   },
+   {
+    "text": "Divide the dough into 10 balls. Stretch each very thin on an oiled table."
+   },
+   {
+    "text": "Spread filling over each sheet, fold the edges in to a square parcel and flatten gently."
+   },
+   {
+    "text": "Fry the plăcinte in a little oil on medium heat until golden on both sides.",
+    "timerSeconds": 360
+   },
+   {
+    "text": "Cool on a rack and pack two per container."
+   }
+  ],
+  "storageTip": "Keeps 4 days in the fridge or 2 months in the freezer. Warm in a dry pan or toaster oven to crisp them up."
  }
 ]

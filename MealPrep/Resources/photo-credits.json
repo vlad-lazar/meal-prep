@@ -79,6 +79,11 @@
   "license": "BY-SA 2.0",
   "page": "https://www.flickr.com/photos/23178876@N03/5034005470"
  },
+ "ciorba-perisoare": {
+  "creator": "Stoschmidt",
+  "license": "BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/w/index.php?curid=124535608"
+ },
  "cod-potatoes-peas": {
   "creator": "Prayitno / Thank you for (12 millions +) view",
   "license": "BY 2.0",
@@ -129,6 +134,11 @@
   "license": "BY 2.0",
   "page": "https://www.flickr.com/photos/80665970@N03/10152805073"
  },
+ "parjoale": {
+  "creator": "Mngck",
+  "license": "BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/w/index.php?curid=117892479"
+ },
  "pasta-bolognese": {
   "creator": "avlxyz",
   "license": "BY-SA 2.0",
@@ -143,6 +153,11 @@
   "creator": "Stacy Spensley",
   "license": "BY 2.0",
   "page": "https://www.flickr.com/photos/21001756@N06/4670390624"
+ },
+ "placinte-branza": {
+  "creator": "Nicubunu",
+  "license": "BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/w/index.php?curid=22362211"
  },
  "pork-stir-fry": {
   "creator": "avlxyz",
@@ -189,6 +204,11 @@
   "license": "TheMealDB",
   "page": "https://www.themealdb.com/meal/52814"
  },
+ "tocanita-mamaliga": {
+  "creator": "amanderson2",
+  "license": "PDM 1.0",
+  "page": "https://www.flickr.com/photos/49399018@N00/34752102603"
+ },
  "tuna-pasta-salad": {
   "creator": "NatalieMaynor",
   "license": "BY 2.0",
@@ -198,5 +218,10 @@
   "creator": "jamalfanaian",
   "license": "BY 2.0",
   "page": "https://www.flickr.com/photos/21207597@N07/13494286464"
+ },
+ "zeama": {
+  "creator": "stu_spivack",
+  "license": "BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/35034346243@N01/69555978"
  }
 }

@@ -47,7 +47,8 @@ enum PhotoCredits {
     static func text(for recipeId: String) -> String? {
         guard let credit = all[recipeId] else { return nil }
         if credit.license == credit.creator { return "Photo: \(credit.creator)" }
-        let licence = credit.license.hasPrefix("BY") ? "CC \(credit.license)" : credit.license
+        let licence = credit.license.hasPrefix("BY") ? "CC \(credit.license)"
+            : (credit.license.hasPrefix("PDM") || credit.license.hasPrefix("CC0")) ? "public domain" : credit.license
         let who = credit.creator.isEmpty ? "" : " by \(credit.creator)"
         return "Photo\(who) · \(licence)"
     }
