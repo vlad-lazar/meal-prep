@@ -17,13 +17,13 @@ struct OnboardingView: View {
     private let cards = [
         Card(emoji: "🥘", title: "Pick a meal",
              text: "Browse meal-prep recipes by price per portion, cooking time and difficulty.",
-             colors: ["FF8A5B", "FF5E9C"]),
+             colors: ["FF8A5B", "FF5E9C", "FFC371"]),
         Card(emoji: "🛒", title: "Shop the cheapest store",
              text: "We compare this week's offers at Netto, REMA 1000, Lidl, føtex and more near you.",
-             colors: ["34D399", "0EA5E9"]),
+             colors: ["34D399", "0EA5E9", "A7F3D0"]),
         Card(emoji: "👩‍🍳", title: "Prep it",
              text: "Tick off your shopping list, then cook step by step with built-in timers.",
-             colors: ["A78BFA", "F472B6"]),
+             colors: ["A78BFA", "F472B6", "FBCFE8"]),
     ]
 
     var body: some View {
@@ -42,43 +42,57 @@ struct OnboardingView: View {
     private func cardView(_ index: Int) -> some View {
         let card = cards[index]
         let isLast = index == cards.count - 1
+        let c = card.colors.map(Color.init(hex:))
         return ZStack {
-            LinearGradient(colors: card.colors.map(Color.init(hex:)), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            VStack(spacing: 24) {
+            MeshBackground(colors: [c[0], c[2], c[1], c[1], c[0], c[2], c[2], c[1], c[0]], speed: 0.4)
+            VStack(spacing: 26) {
                 Spacer()
                 Text(card.emoji)
-                    .font(.system(size: 120))
+                    .font(.system(size: 96))
+                    .frame(width: 180, height: 180)
+                    .glassEffect(.regular.interactive(), in: .circle)
                     .scaleEffect(page == index ? 1 : 0.5)
                     .rotationEffect(.degrees(page == index ? 0 : -20))
                     .animation(.spring(duration: 0.6, bounce: 0.5), value: page)
-                Text(card.title)
-                    .font(.rounded(.largeTitle))
-                    .foregroundStyle(.white)
-                Text(card.text)
-                    .font(.title3)
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(.white.opacity(0.9))
-                    .padding(.horizontal, 32)
+                VStack(spacing: 12) {
+                    Text(card.title)
+                        .font(.rounded(.largeTitle))
+                    Text(card.text)
+                        .font(.title3)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(.white.opacity(0.92))
+                }
+                .foregroundStyle(.white)
+                .shadow(color: .black.opacity(0.12), radius: 6)
+                .padding(.horizontal, 28)
                 Spacer()
                 if isLast {
-                    VStack(spacing: 12) {
+                    VStack(spacing: 14) {
                         Button {
                             Task { await useLocation() }
                         } label: {
                             Label(isLocating ? "Locating…" : "Use my location", systemImage: "location.fill")
                                 .font(.headline)
                                 .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(.white, in: .rect(cornerRadius: 16))
-                                .foregroundStyle(Color(hex: card.colors[0]))
+                                .padding(.vertical, 8)
                         }
+                        .buttonStyle(.glassProminent)
+                        .tint(Color(hex: card.colors[0]))
+                        .controlSize(.large)
                         .disabled(isLocating)
-                        Button("Enter a postcode instead") { showPostcode = true }
-                            .foregroundStyle(.white)
+                        Button {
+                            showPostcode = true
+                        } label: {
+                            Text("Enter a postcode instead")
+                                .font(.headline)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 8)
+                        }
+                        .buttonStyle(.glass)
+                        .controlSize(.large)
                         Text("Your location is only used to find grocery stores near you.")
                             .font(.footnote)
-                            .foregroundStyle(.white.opacity(0.8))
+                            .foregroundStyle(.white.opacity(0.85))
                     }
                 } else {
                     Button {
@@ -87,10 +101,10 @@ struct OnboardingView: View {
                         Text("Next")
                             .font(.headline)
                             .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(.white.opacity(0.25), in: .rect(cornerRadius: 16))
-                            .foregroundStyle(.white)
+                            .padding(.vertical, 8)
                     }
+                    .buttonStyle(.glass)
+                    .controlSize(.large)
                 }
             }
             .padding(.horizontal, 24)

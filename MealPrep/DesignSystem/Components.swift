@@ -2,8 +2,9 @@ import SwiftUI
 import MealPrepCore
 
 extension View {
-    func cardBackground() -> some View {
-        background(Color(.secondarySystemGroupedBackground), in: .rect(cornerRadius: Theme.corner))
+    /// Frosted Liquid Glass panel used for sections and cards.
+    func cardBackground(cornerRadius: CGFloat = Theme.corner) -> some View {
+        glassEffect(.regular, in: .rect(cornerRadius: cornerRadius))
     }
 }
 
@@ -26,12 +27,9 @@ struct Chip: View {
             }
             .font(.subheadline.weight(.semibold))
             .padding(.horizontal, 14)
-            .padding(.vertical, 8)
+            .padding(.vertical, 9)
             .foregroundStyle(isOn ? Color.white : Color.primary)
-            .background {
-                Capsule().fill(isOn ? AnyShapeStyle(Theme.brandGradient)
-                                    : AnyShapeStyle(Color(.secondarySystemGroupedBackground)))
-            }
+            .glassEffect(isOn ? .regular.tint(Theme.accent).interactive() : .regular.interactive(), in: .capsule)
         }
         .buttonStyle(.plain)
         .animation(.snappy, value: isOn)
@@ -44,13 +42,15 @@ struct StatPill: View {
     var tint: Color = Theme.accent
 
     var body: some View {
-        Label(text, systemImage: systemImage)
-            .font(.subheadline.weight(.semibold))
-            .lineLimit(1)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
-            .background(tint.opacity(0.15), in: .capsule)
-            .foregroundStyle(tint)
+        HStack(spacing: 6) {
+            Image(systemName: systemImage).foregroundStyle(tint)
+            Text(text).foregroundStyle(.primary)
+        }
+        .font(.subheadline.weight(.semibold))
+        .lineLimit(1)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 9)
+        .glassEffect(.regular.tint(tint.opacity(0.18)), in: .capsule)
     }
 }
 
@@ -86,11 +86,27 @@ struct BannerView: View {
     var systemImage = "exclamationmark.triangle.fill"
 
     var body: some View {
-        Label(text, systemImage: systemImage)
-            .font(.footnote.weight(.medium))
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(12)
-            .background(Color.orange.opacity(0.15), in: .rect(cornerRadius: 14))
-            .foregroundStyle(.orange)
+        HStack(spacing: 10) {
+            Image(systemName: systemImage).foregroundStyle(.orange)
+            Text(text).foregroundStyle(.primary)
+        }
+        .font(.footnote.weight(.medium))
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(14)
+        .glassEffect(.regular.tint(.orange.opacity(0.2)), in: .rect(cornerRadius: 18))
+    }
+}
+
+struct SectionTitle: View {
+    let text: String
+    var systemImage: String?
+
+    var body: some View {
+        HStack(spacing: 8) {
+            if let systemImage { Image(systemName: systemImage).symbolRenderingMode(.multicolor) }
+            Text(text)
+        }
+        .font(.rounded(.title3))
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }

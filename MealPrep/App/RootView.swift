@@ -19,6 +19,7 @@ struct RootView: View {
             }
         }
         .tint(Theme.accent)
+        .tabBarMinimizeBehavior(.onScrollDown)
         .fullScreenCover(isPresented: Binding(get: { !hasOnboarded }, set: { if !$0 { hasOnboarded = true } })) {
             OnboardingView { hasOnboarded = true }
                 .environment(model)
