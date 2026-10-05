@@ -35,8 +35,17 @@ final class AppModel {
     }
     /// Pantry ingredient ids the user usually does NOT have at home; seeds new baskets.
     var pantryOverrides: Set<String> {
-        didSet { defaults.set(Array(pantryOverrides), forKey: Keys.pantryOverrides) }
+        didSet {
+            defaults.set(Array(pantryOverrides), forKey: Keys.pantryOverrides)
+            requote()
+        }
     }
+    /// Cook-mode state lives here (not in the cover) so closing cook mode keeps timers and the step.
+    let cookTimers = CookTimers()
+    var cookStep = 0
+    private var refreshGeneration = 0
+    private var lastRefresh: Date?
+    private var lastRefreshOrigin: Coordinate?
 
     private enum Keys {
         static let postcode = "fallbackPostcode"
@@ -44,6 +53,8 @@ final class AppModel {
         static let longitude = "fallbackLongitude"
         static let label = "fallbackLabel"
         static let pantryOverrides = "pantryOverrides"
+        /// "postcode" when the user chose an area by hand; GPS otherwise.
+        static let locationMode = "locationMode"
     }
 
     init() {
@@ -92,7 +103,9 @@ final class AppModel {
     /// Called once onboarding is done: resolve a location, then load stores and offers.
     func start() async {
         if coordinate == nil {
-            if location.isAuthorized {
+            if defaults.string(forKey: Keys.locationMode) == "postcode", let saved = savedFallback() {
+                locationState = .located(saved.coordinate, label: saved.label)
+            } else if location.isAuthorized {
                 await locate()
             } else if let saved = savedFallback() {
                 locationState = .located(saved.coordinate, label: saved.label)
@@ -114,6 +127,7 @@ final class AppModel {
         do {
             let coordinate = try await location.currentCoordinate()
             locationState = .located(coordinate, label: await location.label(for: coordinate))
+            defaults.set("gps", forKey: Keys.locationMode)
         } catch {
             if let saved = savedFallback() {
                 locationState = .located(saved.coordinate, label: saved.label)
@@ -129,6 +143,7 @@ final class AppModel {
         defaults.set(coordinate.latitude, forKey: Keys.latitude)
         defaults.set(coordinate.longitude, forKey: Keys.longitude)
         defaults.set(label, forKey: Keys.label)
+        defaults.set("postcode", forKey: Keys.locationMode)
         locationState = .located(coordinate, label: label)
         Task { await refreshNearby() }
     }
@@ -142,26 +157,53 @@ final class AppModel {
 
     // MARK: - Stores and offers
 
+    /// Loads stores and offers for the current location. A newer call (e.g. after picking a postcode
+    /// mid-load) supersedes an older one: only the latest generation writes its results.
     func refreshNearby() async {
-        guard let coordinate, !isLoadingOffers else { return }
+        guard let origin = coordinate else { return }
+        refreshGeneration += 1
+        let generation = refreshGeneration
         isLoadingOffers = true
-        defer {
-            isLoadingOffers = false
-            hasLoadedOffers = true
-        }
-        let search = (try? await storeService.nearbyStores(near: coordinate))
-            ?? StoreSearchResult(stores: [], radius: StoreService.radii[StoreService.radii.count - 1])
-        let result = await offerService.offers(for: catalog.ingredientList, near: coordinate, radius: search.radius)
-        let chains = search.stores.isEmpty ? Set(result.offers.compactMap(\.chain)) : Set(search.stores.map(\.chain))
-        let (catalog, quoter) = (catalog, quoter)
+        let search = try? await storeService.nearbyStores(near: origin)
+        let radius = search?.radius ?? StoreService.radii[StoreService.radii.count - 1]
+        let result = await offerService.offers(for: catalog.ingredientList, near: origin, radius: radius)
+        guard generation == refreshGeneration else { return }
+        // A failed store lookup keeps the stores we already had for this location.
+        let newStores = search?.stores ?? (origin == lastRefreshOrigin ? stores : [])
+        let chains = newStores.isEmpty ? Set(result.offers.compactMap(\.chain)) : Set(newStores.map(\.chain))
+        let (catalog, quoter, pantry) = (catalog, quoter, pantryOverrides)
         let (index, newQuotes) = await Task.detached(priority: .userInitiated) {
             let index = OfferIndex(offers: result.offers, ingredients: catalog.ingredientList)
-            return (index, quoter.quotes(for: catalog.recipes, chains: chains, index: index))
+            return (index, quoter.quotes(for: catalog.recipes, chains: chains, index: index, pantryOverrides: pantry))
         }.value
-        stores = search.stores
+        guard generation == refreshGeneration else { return }
+        stores = newStores
         offers = result
         offerIndex = index
+        lastRefresh = .now
+        lastRefreshOrigin = origin
+        isLoadingOffers = false
+        hasLoadedOffers = true
         withAnimation(.snappy) { quotes = newQuotes }
+    }
+
+    /// On returning to the app: reload when offers are over 12 h old or some have expired.
+    func refreshIfStale() async {
+        guard hasLoadedOffers, !isLoadingOffers, let lastRefresh else { return }
+        let expired = offers.offers.contains { $0.validUntil < .now }
+        if expired || Date.now.timeIntervalSince(lastRefresh) > 12 * 3600 {
+            await refreshNearby()
+        }
+    }
+
+    private func requote() {
+        let (catalog, quoter, index, chains, pantry) = (catalog, quoter, offerIndex, pricingChains, pantryOverrides)
+        Task {
+            let newQuotes = await Task.detached(priority: .userInitiated) {
+                quoter.quotes(for: catalog.recipes, chains: chains, index: index, pantryOverrides: pantry)
+            }.value
+            withAnimation(.snappy) { quotes = newQuotes }
+        }
     }
 
     /// Chains to price against: nearby stores' chains, or chains seen in offers when no store was found.
@@ -201,8 +243,19 @@ final class AppModel {
     // MARK: - Prep
 
     func startPrep(with basket: Basket) {
+        resetCooking()
         activePrep = ActivePrep(basket: basket)
         selectedTab = .prep
+    }
+
+    func discardPrep() {
+        resetCooking()
+        activePrep = nil
+    }
+
+    private func resetCooking() {
+        cookTimers.cancelAll()
+        cookStep = 0
     }
 
     func toggleChecked(_ id: String) {
@@ -215,6 +268,7 @@ final class AppModel {
     }
 
     func finishPrep() {
+        resetCooking()
         activePrep = nil
         selectedTab = .history
     }

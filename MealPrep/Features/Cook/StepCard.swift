@@ -6,6 +6,8 @@ struct StepCard: View {
     let number: Int
     let total: Int
     let tint: Color
+    let portions: Int
+    let basePortions: Int
     let timer: CookTimer?
     let onToggleTimer: () -> Void
 
@@ -17,7 +19,7 @@ struct StepCard: View {
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
                 .glassEffect(.regular.tint(tint.opacity(0.15)), in: .capsule)
-            Text(step.text)
+            Text(StepText.render(step.text, scale: Double(portions) / Double(max(1, basePortions)), portions: portions))
                 .font(.system(.title2, design: .rounded, weight: .medium))
                 .fixedSize(horizontal: false, vertical: true)
             if let timer {

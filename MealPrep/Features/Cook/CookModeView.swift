@@ -8,13 +8,14 @@ struct CookModeView: View {
     @Environment(\.dismiss) private var dismiss
     let recipe: Recipe
     let basket: Basket
-    @State private var index = 0
     @State private var finished = false
-    @State private var timers = CookTimers()
 
+    private var timers: CookTimers { model.cookTimers }
+    private var index: Int { model.cookStep }
     private var isLast: Bool { index == recipe.steps.count - 1 }
 
     var body: some View {
+        @Bindable var model = model
         ZStack {
             AppBackground()
             if finished {
@@ -27,9 +28,10 @@ struct CookModeView: View {
             } else {
                 VStack(spacing: 16) {
                     topBar
-                    TabView(selection: $index) {
+                    TabView(selection: $model.cookStep) {
                         ForEach(Array(recipe.steps.enumerated()), id: \.offset) { stepIndex, step in
                             StepCard(step: step, number: stepIndex + 1, total: recipe.steps.count, tint: recipe.tint,
+                                     portions: basket.portions, basePortions: recipe.basePortions,
                                      timer: step.timerSeconds.map { timers.timer(for: stepIndex, total: $0) },
                                      onToggleTimer: {
                                          if let seconds = step.timerSeconds {
@@ -49,11 +51,13 @@ struct CookModeView: View {
         }
         .animation(.spring(duration: 0.5, bounce: 0.3), value: finished)
         .sensoryFeedback(.selection, trigger: index)
-        .onAppear { UIApplication.shared.isIdleTimerDisabled = true }
-        .onDisappear {
-            UIApplication.shared.isIdleTimerDisabled = false
-            timers.cancelAll()
+        .onAppear {
+            UIApplication.shared.isIdleTimerDisabled = true
+            model.cookStep = min(model.cookStep, recipe.steps.count - 1)
         }
+        // Timers keep running (and their notifications stay scheduled) when cook mode is closed;
+        // they're cancelled on Finish, a new prep or discard.
+        .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
     }
 
     private var topBar: some View {
@@ -81,7 +85,7 @@ struct CookModeView: View {
         GlassEffectContainer(spacing: 12) {
             HStack {
                 Button {
-                    withAnimation { index -= 1 }
+                    withAnimation { model.cookStep -= 1 }
                 } label: {
                     Label("Back", systemImage: "chevron.left").font(.headline)
                 }
@@ -90,7 +94,7 @@ struct CookModeView: View {
                 .disabled(index == 0)
                 Spacer()
                 Button {
-                    if isLast { finish() } else { withAnimation { index += 1 } }
+                    if isLast { finish() } else { withAnimation { model.cookStep += 1 } }
                 } label: {
                     Label(isLast ? "Finish" : "Next", systemImage: isLast ? "checkmark" : "chevron.right")
                         .font(.headline)

@@ -61,7 +61,7 @@ struct ShoppingListView: View {
             }
         }
         .confirmationDialog("Discard this shopping list?", isPresented: $confirmDiscard, titleVisibility: .visible) {
-            Button("Discard", role: .destructive) { model.activePrep = nil }
+            Button("Discard", role: .destructive) { model.discardPrep() }
         }
         .fullScreenCover(isPresented: $cooking) {
             CookModeView(recipe: recipe, basket: prep.basket)

@@ -19,6 +19,8 @@ final class LocationService {
     /// Asks for "When In Use" permission if needed and returns the first fix (15 s timeout).
     func currentCoordinate(timeout: Duration = .seconds(15)) async throws -> Coordinate {
         if isDenied { throw LocationError.denied }
+        // While the permission alert is up the clock shouldn't run out on a slow reader.
+        let timeout = manager.authorizationStatus == .notDetermined ? .seconds(60) : timeout
         let session = CLServiceSession(authorization: .whenInUse)
         defer { session.invalidate() }
         return try await withThrowingTaskGroup(of: Coordinate.self) { group in

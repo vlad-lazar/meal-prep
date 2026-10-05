@@ -24,6 +24,19 @@ struct PostcodeSheet: View {
                     Text(errorText ?? "Used only to find grocery stores near you.")
                         .foregroundStyle(errorText == nil ? Color.secondary : Color.red)
                 }
+                Section {
+                    Button {
+                        Task {
+                            await model.locate()
+                            if model.coordinate != nil {
+                                dismiss()
+                                Task { await model.refreshNearby() }
+                            }
+                        }
+                    } label: {
+                        Label("Use my current location", systemImage: "location.fill")
+                    }
+                }
             }
             .navigationTitle("Your area")
             .navigationBarTitleDisplayMode(.inline)

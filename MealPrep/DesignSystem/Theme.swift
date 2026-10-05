@@ -14,7 +14,7 @@ extension Color {
 enum Theme {
     static let corner: CGFloat = 20
     static let accent = Color(hex: "E5484D")
-    static let offer = Color(hex: "16A34A")
+    static let offer = Color(hex: "15803D")   // ≥ 4.5:1 with white
     static let brandGradient = LinearGradient(
         colors: [Color(hex: "FF8A5B"), Color(hex: "FF5E9C"), Color(hex: "7C5CFF")],
         startPoint: .topLeading, endPoint: .bottomTrailing)

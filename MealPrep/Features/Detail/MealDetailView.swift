@@ -186,7 +186,7 @@ struct MealDetailView: View {
                             .frame(width: 28, height: 28)
                             .background(recipe.tint, in: .circle)
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(step.text)
+                            Text(StepText.render(step.text, scale: scale, portions: portions))
                             if let seconds = step.timerSeconds {
                                 Label("\(max(1, (seconds + 59) / 60)) min", systemImage: "timer")
                                     .font(.caption).foregroundStyle(.secondary)

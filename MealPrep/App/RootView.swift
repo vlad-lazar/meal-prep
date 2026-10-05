@@ -3,6 +3,7 @@ import SwiftUI
 struct RootView: View {
     @Environment(AppModel.self) private var model
     @AppStorage("hasOnboarded") private var hasOnboarded = false
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         @Bindable var model = model
@@ -23,6 +24,9 @@ struct RootView: View {
         .fullScreenCover(isPresented: Binding(get: { !hasOnboarded }, set: { if !$0 { hasOnboarded = true } })) {
             OnboardingView { hasOnboarded = true }
                 .environment(model)
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active { Task { await model.refreshIfStale() } }
         }
         .task(id: hasOnboarded) {
             if hasOnboarded { await model.start() }
