@@ -6,7 +6,7 @@ let package = Package(
     platforms: [.iOS(.v18), .macOS(.v14)],
     products: [.library(name: "MealPrepCore", targets: ["MealPrepCore"])],
     targets: [
-        .target(name: "MealPrepCore"),
+        .target(name: "MealPrepCore", resources: [.process("Resources")]),
         .testTarget(name: "MealPrepCoreTests", dependencies: ["MealPrepCore"], resources: [.copy("Fixtures")]),
     ]
 )

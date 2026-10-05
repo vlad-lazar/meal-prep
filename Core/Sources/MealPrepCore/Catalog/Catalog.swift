@@ -28,6 +28,17 @@ public struct Catalog: Sendable {
         )
     }
 
+    /// The catalog shipped inside the package (recipes.json, ingredients.json, nutrition.json).
+    public static func bundled() throws -> Catalog {
+        func load(_ name: String) throws -> Data {
+            guard let url = Bundle.module.url(forResource: name, withExtension: "json") else {
+                throw CatalogError.missingResource(name)
+            }
+            return try Data(contentsOf: url)
+        }
+        return try decode(recipes: load("recipes"), ingredients: load("ingredients"), nutrition: load("nutrition"))
+    }
+
     public func ingredient(_ id: String) -> Ingredient? { ingredients[id] }
     public func recipe(_ id: String) -> Recipe? { recipes.first { $0.id == id } }
     public var cuisines: [String] { Array(Set(recipes.map(\.cuisine))).sorted() }
