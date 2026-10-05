@@ -19,6 +19,10 @@ struct RootView: View {
             }
         }
         .tint(Theme.accent)
+        .fullScreenCover(isPresented: Binding(get: { !hasOnboarded }, set: { if !$0 { hasOnboarded = true } })) {
+            OnboardingView { hasOnboarded = true }
+                .environment(model)
+        }
         .task(id: hasOnboarded) {
             if hasOnboarded { await model.start() }
         }
