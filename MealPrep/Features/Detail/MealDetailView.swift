@@ -74,7 +74,7 @@ struct MealDetailView: View {
         GeometryReader { geo in
             let minY = geo.frame(in: .scrollView).minY
             ZStack(alignment: .bottomLeading) {
-                RecipePhoto(recipe: recipe, emojiSize: 120)
+                RecipePhoto(recipe: recipe, emojiSize: 120, targetWidth: 440)
                 LinearGradient(colors: [.clear, .clear, .black.opacity(0.55)], startPoint: .top, endPoint: .bottom)
                 VStack(alignment: .leading, spacing: 6) {
                     Text(recipe.cuisine.uppercased())
@@ -184,7 +184,7 @@ struct MealDetailView: View {
                             .font(.rounded(.subheadline))
                             .foregroundStyle(.white)
                             .frame(width: 28, height: 28)
-                            .background(recipe.linearGradient, in: .circle)
+                            .background(recipe.tint, in: .circle)
                         VStack(alignment: .leading, spacing: 4) {
                             Text(step.text)
                             if let seconds = step.timerSeconds {

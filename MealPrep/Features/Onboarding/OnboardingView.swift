@@ -17,13 +17,13 @@ struct OnboardingView: View {
     private let cards = [
         Card(emoji: "🥘", title: "Pick a meal",
              text: "Browse meal-prep recipes by price per portion, cooking time and difficulty.",
-             colors: ["FF8A5B", "FF5E9C", "FFC371"]),
+             colors: ["EA580C", "DB2777", "F97316"]),
         Card(emoji: "🛒", title: "Shop the cheapest store",
              text: "We compare this week's offers at Netto, REMA 1000, Lidl, føtex and more near you.",
-             colors: ["34D399", "0EA5E9", "A7F3D0"]),
+             colors: ["059669", "0369A1", "0D9488"]),
         Card(emoji: "👩‍🍳", title: "Prep it",
              text: "Tick off your shopping list, then cook step by step with built-in timers.",
-             colors: ["A78BFA", "F472B6", "FBCFE8"]),
+             colors: ["7C3AED", "BE185D", "9333EA"]),
     ]
 
     var body: some View {
@@ -34,6 +34,7 @@ struct OnboardingView: View {
         }
         .tabViewStyle(.page(indexDisplayMode: .always))
         .ignoresSafeArea()
+        .preferredColorScheme(.dark)
         .sheet(isPresented: $showPostcode) {
             PostcodeSheet(onSaved: onFinish)
         }
@@ -44,7 +45,7 @@ struct OnboardingView: View {
         let isLast = index == cards.count - 1
         let c = card.colors.map(Color.init(hex:))
         return ZStack {
-            MeshBackground(colors: [c[0], c[2], c[1], c[1], c[0], c[2], c[2], c[1], c[0]], speed: 0.4)
+            MeshBackground(colors: [c[0], c[2], c[1], c[1], c[0], c[2], c[2], c[1], c[0]], speed: 0.4, animated: true)
             VStack(spacing: 26) {
                 Spacer()
                 Text(card.emoji)

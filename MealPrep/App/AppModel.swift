@@ -25,6 +25,8 @@ final class AppModel {
     var locationState: LocationState = .unknown
     var stores: [Store] = []
     var offers = OfferResult(offers: [], freshness: .live)
+    /// Best offer per chain and ingredient, rebuilt off the main thread whenever offers change.
+    var offerIndex = OfferIndex.empty
     var quotes: [String: MealQuote] = [:]
     var isLoadingOffers = false
     var hasLoadedOffers = false
@@ -150,11 +152,16 @@ final class AppModel {
         let search = (try? await storeService.nearbyStores(near: coordinate))
             ?? StoreSearchResult(stores: [], radius: StoreService.radii[StoreService.radii.count - 1])
         let result = await offerService.offers(for: catalog.ingredientList, near: coordinate, radius: search.radius)
+        let chains = search.stores.isEmpty ? Set(result.offers.compactMap(\.chain)) : Set(search.stores.map(\.chain))
+        let (catalog, quoter) = (catalog, quoter)
+        let (index, newQuotes) = await Task.detached(priority: .userInitiated) {
+            let index = OfferIndex(offers: result.offers, ingredients: catalog.ingredientList)
+            return (index, quoter.quotes(for: catalog.recipes, chains: chains, index: index))
+        }.value
         stores = search.stores
         offers = result
-        withAnimation(.snappy) {
-            quotes = quoter.quotes(for: catalog.recipes, chains: pricingChains, offers: result.offers)
-        }
+        offerIndex = index
+        withAnimation(.snappy) { quotes = newQuotes }
     }
 
     /// Chains to price against: nearby stores' chains, or chains seen in offers when no store was found.
@@ -167,15 +174,15 @@ final class AppModel {
         let baskets: [Basket]
         if !stores.isEmpty {
             baskets = stores.map {
-                pricer.price(recipe, portions: portions, chain: $0.chain, store: $0, offers: offers.offers,
+                pricer.price(recipe, portions: portions, chain: $0.chain, store: $0, index: offerIndex,
                              pantryOverrides: pantryOverrides)
             }
         } else if !pricingChains.isEmpty {
             baskets = pricingChains.map {
-                pricer.price(recipe, portions: portions, chain: $0, offers: offers.offers, pantryOverrides: pantryOverrides)
+                pricer.price(recipe, portions: portions, chain: $0, index: offerIndex, pantryOverrides: pantryOverrides)
             }
         } else {
-            baskets = [pricer.price(recipe, portions: portions, chain: nil, offers: [], pantryOverrides: pantryOverrides)]
+            baskets = [pricer.price(recipe, portions: portions, chain: nil, index: .empty, pantryOverrides: pantryOverrides)]
         }
         return StoreRanker.rank(baskets)
     }

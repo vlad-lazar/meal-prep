@@ -4,10 +4,24 @@ import SwiftUI
 struct MeshBackground: View {
     let colors: [Color]
     var speed: Double = 0.25
+    /// Animating redraws the gradient (and every glass layer above it) each frame — only worth it on
+    /// sparse screens like onboarding.
+    var animated = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
-        TimelineView(.animation(minimumInterval: 1 / 20, paused: reduceMotion)) { context in
+        if animated && !reduceMotion {
+            animatedMesh
+        } else {
+            MeshGradient(width: 3, height: 3,
+                         points: [[0, 0], [0.5, 0], [1, 0], [0, 0.5], [0.55, 0.45], [1, 0.5], [0, 1], [0.5, 1], [1, 1]],
+                         colors: colors)
+                .ignoresSafeArea()
+        }
+    }
+
+    private var animatedMesh: some View {
+        TimelineView(.animation(minimumInterval: 1 / 30)) { context in
             let t = Float(context.date.timeIntervalSinceReferenceDate * speed)
             MeshGradient(
                 width: 3, height: 3,

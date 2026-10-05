@@ -9,15 +9,30 @@ public struct BasketPricer: Sendable {
         self.matcher = matcher
     }
 
-    /// Prices `recipe` for `portions` at `chain` (nil = typical prices only).
+    /// Prices `recipe` for `portions` at `chain` (nil = typical prices only), matching `offers` directly.
     public func price(_ recipe: Recipe, portions: Int, chain: Chain?, store: Store? = nil,
                       offers: [Offer], pantryOverrides: Set<String> = []) -> Basket {
         let chainOffers = chain.map { chain in offers.filter { $0.dealerId == chain.dealerId } } ?? []
+        return price(recipe, portions: portions, chain: chain, store: store, pantryOverrides: pantryOverrides) {
+            matcher.bestOffer(for: $0, in: chainOffers)
+        }
+    }
+
+    /// Same as above but with offers pre-matched in an `OfferIndex` — a lookup per ingredient.
+    public func price(_ recipe: Recipe, portions: Int, chain: Chain?, store: Store? = nil,
+                      index: OfferIndex, pantryOverrides: Set<String> = []) -> Basket {
+        price(recipe, portions: portions, chain: chain, store: store, pantryOverrides: pantryOverrides) { ingredient in
+            chain.flatMap { index.best(for: ingredient.id, chain: $0) }
+        }
+    }
+
+    private func price(_ recipe: Recipe, portions: Int, chain: Chain?, store: Store?, pantryOverrides: Set<String>,
+                       bestOffer: (Ingredient) -> Offer?) -> Basket {
         let scale = Double(portions) / Double(max(1, recipe.basePortions))
         let lines = recipe.ingredients.compactMap { item -> PricedLine? in
             guard let ingredient = catalog.ingredient(item.ingredientId) else { return nil }
             let needed = item.amount * scale
-            if let offer = matcher.bestOffer(for: ingredient, in: chainOffers),
+            if let offer = bestOffer(ingredient),
                let line = makeLine(ingredient, needed: needed, unit: item.unit, packAmount: offer.purchaseAmount,
                                    packUnit: offer.packUnit, packPrice: offer.price, source: .offer(offer)) {
                 return line
