@@ -37,6 +37,20 @@ struct CatalogTests {
         #expect(catalog.cuisines == ["Indian"])
     }
 
+    @Test func decodesOptionalVideo() throws {
+        let json = """
+        {"id":"v","name":"V","cuisine":"X","emoji":"🍲","gradient":["000000","FFFFFF"],"minutes":10,"difficulty":1,
+         "basePortions":2,"ingredients":[],"steps":[],"storageTip":"",
+         "video":{"id":"5wiwMKhvuDA","title":"Chili con carne #shorts","author":"Cook","seconds":58}}
+        """
+        let recipe = try JSONDecoder().decode(Recipe.self, from: Data(json.utf8))
+        #expect(recipe.video?.id == "5wiwMKhvuDA")
+        #expect(recipe.video?.seconds == 58)
+        #expect(recipe.video?.watchURL.absoluteString == "https://www.youtube.com/shorts/5wiwMKhvuDA")
+        #expect(recipe.video?.thumbnailURL.absoluteString == "https://i.ytimg.com/vi/5wiwMKhvuDA/hqdefault.jpg")
+        #expect(Fixtures.curry.video == nil)
+    }
+
     @Test func nutritionArithmetic() {
         let a = NutritionFacts(kcal: 100, protein: 10, carbs: 5, fat: 2, fibre: 1)
         let sum = a + a.scaled(by: 0.5)

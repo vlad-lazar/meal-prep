@@ -48,6 +48,7 @@ struct StatPill: View {
         }
         .font(.subheadline.weight(.semibold))
         .lineLimit(1)
+        .minimumScaleFactor(0.8)
         .padding(.horizontal, 12)
         .padding(.vertical, 9)
         .glassEffect(.regular.tint(tint.opacity(0.18)), in: .capsule)

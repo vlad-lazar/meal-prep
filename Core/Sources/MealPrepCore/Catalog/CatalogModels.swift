@@ -70,6 +70,17 @@ public struct Step: Codable, Sendable, Hashable {
     public let timerSeconds: Int?
 }
 
+/// A short (≤ 2 min) YouTube video showing the dish being made.
+public struct RecipeVideo: Codable, Sendable, Hashable {
+    public let id: String
+    public let title: String
+    public let author: String
+    public let seconds: Int
+
+    public var watchURL: URL { URL(string: "https://www.youtube.com/shorts/\(id)")! }
+    public var thumbnailURL: URL { URL(string: "https://i.ytimg.com/vi/\(id)/hqdefault.jpg")! }
+}
+
 public struct Recipe: Codable, Sendable, Hashable, Identifiable {
     public let id: String
     public let name: String
@@ -82,4 +93,5 @@ public struct Recipe: Codable, Sendable, Hashable, Identifiable {
     public let ingredients: [RecipeIngredient]
     public let steps: [Step]
     public let storageTip: String
+    public var video: RecipeVideo? = nil
 }

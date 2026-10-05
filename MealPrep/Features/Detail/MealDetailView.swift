@@ -32,6 +32,9 @@ struct MealDetailView: View {
                         Text(credit).font(.caption2).foregroundStyle(.secondary).padding(.top, -14)
                     }
                     stats
+                    if let video = recipe.video {
+                        RecipeVideoCard(video: video, tint: recipe.tint)
+                    }
                     portionStepper
                     ingredients
                     NutritionCard(facts: model.nutrition.perPortion(recipe), tint: recipe.tint)
@@ -99,7 +102,7 @@ struct MealDetailView: View {
     private var stats: some View {
         GlassEffectContainer(spacing: 8) {
             HStack(spacing: 8) {
-                StatPill(systemImage: "banknote", text: "\(cheapestPerPortion.kr()) / portion", tint: recipe.tint)
+                StatPill(systemImage: "banknote", text: "\(cheapestPerPortion.kr())/portion", tint: recipe.tint)
                 StatPill(systemImage: "clock", text: "\(recipe.minutes) min", tint: recipe.tint)
                 StatPill(systemImage: "flame", text: recipe.difficulty.label, tint: recipe.tint)
             }

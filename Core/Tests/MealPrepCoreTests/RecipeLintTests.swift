@@ -34,6 +34,16 @@ struct RecipeLintTests {
         }
     }
 
+    @Test func videosAreShortAndWellFormed() {
+        for recipe in catalog.recipes {
+            guard let video = recipe.video else { continue }
+            #expect(video.id.count == 11 && video.id.allSatisfy { $0.isLetter || $0.isNumber || $0 == "-" || $0 == "_" },
+                    "\(recipe.id) bad video id \(video.id)")
+            #expect((5...120).contains(video.seconds), "\(recipe.id) video is \(video.seconds)s")
+            #expect(!video.title.isEmpty, "\(recipe.id) video title")
+        }
+    }
+
     @Test func ingredientsResolveAndConvert() {
         for recipe in catalog.recipes {
             let ids = recipe.ingredients.map(\.ingredientId)
