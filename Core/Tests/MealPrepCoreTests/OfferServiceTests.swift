@@ -82,6 +82,37 @@ struct OfferServiceTests {
         #expect(result.offers.isEmpty)
     }
 
+    @Test func givesUpQuicklyWhenEveryRequestFails() async {
+        let ingredients = (0..<20).map { i in
+            Ingredient(id: "i\(i)", name: "I\(i)", danishName: "I\(i)", searchTerms: ["term\(i)"], excludeTerms: [],
+                       section: .dry, isPantry: false, typicalPack: Pack(amount: 1, unit: .kg, priceDKK: 10),
+                       gramsPerPiece: nil, mlDensity: nil, nutritionId: "x")
+        }
+        let http = FakeHTTP { _ in throw URLError(.timedOut) }
+        let result = await OfferService(client: TjekClient(http: http), cache: OfferCache(directory: tempCacheDirectory()))
+            .offers(for: ingredients, near: origin, radius: 3000)
+        #expect(result.freshness == .unavailable)
+        let requests = await http.requests.count
+        #expect(requests < 12, "made \(requests) requests on a dead network")
+    }
+
+    @Test func keepsGoingWhenSomeRequestsSucceed() async {
+        let ingredients = (0..<20).map { i in
+            Ingredient(id: "i\(i)", name: "I\(i)", danishName: "I\(i)", searchTerms: ["term\(i)"], excludeTerms: [],
+                       section: .dry, isPantry: false, typicalPack: Pack(amount: 1, unit: .kg, priceDKK: 10),
+                       gramsPerPiece: nil, mlDensity: nil, nutritionId: "x")
+        }
+        // Every third term fails; the rest succeed — no bail-out.
+        let http = FakeHTTP { url in
+            let n = Int(queryItem(url, "query")?.dropFirst(4) ?? "") ?? 0
+            if n % 3 == 0 { throw HTTPError.status(500) }
+            return Data("[]".utf8)
+        }
+        _ = await OfferService(client: TjekClient(http: http), cache: OfferCache(directory: tempCacheDirectory()))
+            .offers(for: ingredients, near: origin, radius: 3000)
+        #expect(await http.requests.count == 20)
+    }
+
     @Test func offersURLHasQueryAndLocation() {
         let url = TjekClient(http: FakeHTTP { _ in Data() }).offersURL(query: "løg", near: origin, radius: 3000)
         #expect(url.absoluteString.hasPrefix("https://squid-api.tjek.com/v2/offers/search?"))

@@ -45,15 +45,35 @@ struct BasketPricerTests {
     @Test func usesChainOfferWhenItMatches() throws {
         let netto = makeOffer("n1", "Dansk kyllingebrystfilet", price: 75, amount: 1000, dealer: .netto)
         let lidl = makeOffer("l1", "Kyllingebrystfilet", price: 20, amount: 450, dealer: .lidl)
-        let basket = pricer.price(recipe, portions: 8, chain: .netto, offers: [netto, lidl])
+        // 4 portions = 600 g: one 1 kg offer pack (75 kr) beats two 500 g typical packs (90 kr).
+        let basket = pricer.price(recipe, portions: 4, chain: .netto, offers: [netto, lidl])
         let chicken = try line(basket, "chicken-breast")
         #expect(chicken.isOffer)
         #expect(chicken.offer?.id == "n1")
-        #expect(chicken.packsToBuy == 2)
-        #expect(approx(chicken.lineTotal, 150))
-        #expect(approx(chicken.usedCost, 90))
+        #expect(chicken.packsToBuy == 1)
+        #expect(approx(chicken.lineTotal, 75))
+        #expect(approx(chicken.usedCost, 45))
         #expect(basket.offerCount == 1)
         #expect(basket.estimateCount == 2)              // rice + onion; oil is pantry
+    }
+
+    @Test func bulkOfferLosesWhenTypicalPackIsCheaperForTheAmountNeeded() throws {
+        // 2 kg for 159.95 is cheap per kg, but 2 portions only need 300 g: one 500 g pack (45 kr) wins.
+        let bulk = makeOffer("b1", "GESTUS DANSK KYLLINGEBRYSTFILET", price: 159.95, amount: 2, unit: .kg, dealer: .meny)
+        let two = pricer.price(recipe, portions: 2, chain: .meny, offers: [bulk])
+        #expect(!(try line(two, "chicken-breast")).isOffer)
+        #expect(approx(try line(two, "chicken-breast").lineTotal, 45))
+        // 12 portions need 1.8 kg: one bulk pack (159.95) beats four typical packs (180).
+        let twelve = pricer.price(recipe, portions: 12, chain: .meny, offers: [bulk])
+        #expect(try line(twelve, "chicken-breast").offer?.id == "b1")
+    }
+
+    @Test func picksTheOfferWithTheLowestTillPriceNotPerKg() throws {
+        let small = makeOffer("s", "Kyllingebrystfilet", price: 30, amount: 400, dealer: .lidl)      // 0.075/g
+        let big = makeOffer("b", "Kyllingebrystfilet", price: 99, amount: 1500, dealer: .lidl)       // 0.066/g
+        // 2 portions = 300 g: the small pack (30 kr) is what you'd actually buy.
+        let basket = pricer.price(recipe, portions: 2, chain: .lidl, offers: [small, big])
+        #expect(try line(basket, "chicken-breast").offer?.id == "s")
     }
 
     @Test func pantryExcludedUnlessOverridden() throws {

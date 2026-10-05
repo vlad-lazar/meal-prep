@@ -34,9 +34,14 @@ public struct OfferMatcher: Sendable {
     }
 
     public func bestOffer(for ingredient: Ingredient, in offers: [Offer]) -> Offer? {
+        matchingOffers(for: ingredient, in: offers).first
+    }
+
+    /// All offers matching `ingredient`, cheapest per unit first.
+    public func matchingOffers(for ingredient: Ingredient, in offers: [Offer]) -> [Offer] {
         offers
             .filter { matches($0, ingredient) }
-            .min { (unitPrice(of: $0, for: ingredient) ?? .infinity) < (unitPrice(of: $1, for: ingredient) ?? .infinity) }
+            .sorted { (unitPrice(of: $0, for: ingredient) ?? .infinity) < (unitPrice(of: $1, for: ingredient) ?? .infinity) }
     }
 
     static func normalize(_ text: String) -> String {

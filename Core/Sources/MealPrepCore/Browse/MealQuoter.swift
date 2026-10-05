@@ -27,10 +27,14 @@ public struct MealQuoter: Sendable {
         return quote(recipe, baskets: baskets)
     }
 
-    public func quote(_ recipe: Recipe, chains: Set<Chain>, index: OfferIndex) -> MealQuote {
+    public func quote(_ recipe: Recipe, chains: Set<Chain>, index: OfferIndex,
+                      pantryOverrides: Set<String> = []) -> MealQuote {
         let baskets: [Basket] = chains.isEmpty
-            ? [pricer.price(recipe, portions: recipe.basePortions, chain: nil, index: .empty)]
-            : chains.map { pricer.price(recipe, portions: recipe.basePortions, chain: $0, index: index) }
+            ? [pricer.price(recipe, portions: recipe.basePortions, chain: nil, index: .empty,
+                            pantryOverrides: pantryOverrides)]
+            : chains.map {
+                pricer.price(recipe, portions: recipe.basePortions, chain: $0, index: index, pantryOverrides: pantryOverrides)
+            }
         return quote(recipe, baskets: baskets)
     }
 
@@ -44,7 +48,10 @@ public struct MealQuoter: Sendable {
         Dictionary(uniqueKeysWithValues: recipes.map { ($0.id, quote($0, chains: chains, offers: offers)) })
     }
 
-    public func quotes(for recipes: [Recipe], chains: Set<Chain>, index: OfferIndex) -> [String: MealQuote] {
-        Dictionary(uniqueKeysWithValues: recipes.map { ($0.id, quote($0, chains: chains, index: index)) })
+    public func quotes(for recipes: [Recipe], chains: Set<Chain>, index: OfferIndex,
+                       pantryOverrides: Set<String> = []) -> [String: MealQuote] {
+        Dictionary(uniqueKeysWithValues: recipes.map {
+            ($0.id, quote($0, chains: chains, index: index, pantryOverrides: pantryOverrides))
+        })
     }
 }

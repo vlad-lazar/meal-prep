@@ -75,7 +75,7 @@
   ],
   "steps": [
    {
-    "text": "Rinse the rice, then cook it in 600 ml lightly salted water with a lid on.",
+    "text": "Rinse the rice, then cook it in {600 ml} lightly salted water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -97,7 +97,7 @@
     "text": "Stir in the spinach until wilted and season with salt."
    },
    {
-    "text": "Divide rice and curry between 4 containers and let cool before closing the lids."
+    "text": "Divide rice and curry between {portions} containers and let cool before closing the lids."
    }
   ],
   "storageTip": "Keeps 4 days in the fridge or 3 months in the freezer. Reheat 2–3 minutes in the microwave with a splash of water over the rice.",
@@ -189,7 +189,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml lightly salted water with a lid on.",
+    "text": "Cook the rice in {600 ml} lightly salted water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -308,7 +308,7 @@
     "timerSeconds": 480
    },
    {
-    "text": "Shape 12 frikadeller with a wet spoon and fry them in butter and oil on medium heat, turning a few times.",
+    "text": "Shape {12} frikadeller with a wet spoon and fry them in butter and oil on medium heat, turning a few times.",
     "timerSeconds": 720
    },
    {
@@ -475,7 +475,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -580,7 +580,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -591,7 +591,7 @@
     "text": "Add curry powder and cumin and stir for 1 minute."
    },
    {
-    "text": "Add rinsed lentils, tomatoes, coconut milk and 400 ml water. Simmer until the lentils fall apart, stirring often.",
+    "text": "Add rinsed lentils, tomatoes, coconut milk and {400 ml} water. Simmer until the lentils fall apart, stirring often.",
     "timerSeconds": 1200
    },
    {
@@ -667,7 +667,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -784,7 +784,7 @@
     "timerSeconds": 1200
    },
    {
-    "text": "Pour 500 ml boiling water over the bulgur, cover and leave to soak.",
+    "text": "Pour {500 ml} boiling water over the bulgur, cover and leave to soak.",
     "timerSeconds": 900
    },
    {
@@ -856,7 +856,7 @@
     "text": "Stir oats, milk, yogurt, honey and cinnamon together in a bowl."
    },
    {
-    "text": "Divide the mixture between 5 jars."
+    "text": "Divide the mixture between {portions} jars."
    },
    {
     "text": "Slice the bananas and add them on top with the frozen berries."
@@ -1150,7 +1150,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -1257,7 +1257,7 @@
   ],
   "steps": [
    {
-    "text": "Mix mince, egg, oats, half the onion (grated), salt and pepper. Roll about 20 meatballs."
+    "text": "Mix mince, egg, oats, half the onion (grated), salt and pepper. Roll about {20} meatballs."
    },
    {
     "text": "Brown the meatballs in olive oil. Lift them out.",
@@ -1656,7 +1656,7 @@
     "timerSeconds": 900
    },
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -1750,7 +1750,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -2012,11 +2012,11 @@
     "timerSeconds": 900
    },
    {
-    "text": "Shape 4 patties, season and fry them in the rest of the butter, turning once.",
+    "text": "Shape {4} patties, season and fry them in the rest of the butter, turning once.",
     "timerSeconds": 480
    },
    {
-    "text": "Whisk flour into the pan juices, add 300 ml water and the stock cube and simmer into gravy.",
+    "text": "Whisk flour into the pan juices, add {300 ml} water and the stock cube and simmer into gravy.",
     "timerSeconds": 300
    },
    {
@@ -2161,7 +2161,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 800 ml water with a lid on.",
+    "text": "Cook the rice in {800 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -2257,7 +2257,7 @@
     "timerSeconds": 240
    },
    {
-    "text": "Whisk peanut butter, soy sauce, honey, lime juice, grated garlic and 100 ml hot water into a sauce."
+    "text": "Whisk peanut butter, soy sauce, honey, lime juice, grated garlic and {100 ml} hot water into a sauce."
    },
    {
     "text": "Fry the sliced chicken in the oil until cooked through.",
@@ -2436,7 +2436,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -2444,7 +2444,7 @@
     "timerSeconds": 300
    },
    {
-    "text": "Add diced sweet potato, tomatoes and 200 ml water and simmer.",
+    "text": "Add diced sweet potato, tomatoes and {200 ml} water and simmer.",
     "timerSeconds": 1200
    },
    {
@@ -2537,7 +2537,7 @@
     "timerSeconds": 600
    },
    {
-    "text": "Make 8 hollows and crack in the eggs. Cover and cook until the whites set.",
+    "text": "Make {8} hollows and crack in the eggs. Cover and cook until the whites set.",
     "timerSeconds": 420
    },
    {
@@ -2631,7 +2631,7 @@
     "timerSeconds": 1500
    },
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -2718,7 +2718,7 @@
     "timerSeconds": 480
    },
    {
-    "text": "Stir in paprika and tomato paste, then 750 ml water and the stock cube."
+    "text": "Stir in paprika and tomato paste, then {750 ml} water and the stock cube."
    },
    {
     "text": "Cover and simmer gently until the beef is tender.",
@@ -2885,7 +2885,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -3063,7 +3063,7 @@
   ],
   "steps": [
    {
-    "text": "Dissolve the stock cubes in 1.2 l hot water and keep it warm."
+    "text": "Dissolve the stock cubes in {1.2 l} hot water and keep it warm."
    },
    {
     "text": "Fry the sliced mushrooms in olive oil until golden. Lift half out.",
@@ -3159,7 +3159,7 @@
     "timerSeconds": 120
    },
    {
-    "text": "Add 2 l water and the stock cubes and bring to the boil."
+    "text": "Add {2 l} water and the stock cubes and bring to the boil."
    },
    {
     "text": "Poach the whole chicken breasts in the broth, then lift them out and shred.",
@@ -3246,7 +3246,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 300 ml water with a lid on.",
+    "text": "Cook the rice in {300 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -3347,7 +3347,7 @@
   ],
   "steps": [
    {
-    "text": "Cook the rice in 600 ml water with a lid on.",
+    "text": "Cook the rice in {600 ml} water with a lid on.",
     "timerSeconds": 720
    },
    {
@@ -3363,7 +3363,7 @@
     "timerSeconds": 180
    },
    {
-    "text": "Add garlic, ginger, soy sauce, honey and 4 tbsp water; toss until glossy.",
+    "text": "Add garlic, ginger, soy sauce, honey and {4 tbsp} water; toss until glossy.",
     "timerSeconds": 120
    },
    {
@@ -3835,7 +3835,7 @@
     "timerSeconds": 480
    },
    {
-    "text": "Add tomato paste, the juice of one lime, the stock cube and 400 ml water. Cover and braise in the oven.",
+    "text": "Add tomato paste, the juice of one lime, the stock cube and {400 ml} water. Cover and braise in the oven.",
     "timerSeconds": 9000
    },
    {
@@ -3928,7 +3928,7 @@
   ],
   "steps": [
    {
-    "text": "Put the chicken in a pot with 2 l cold water, bring to the boil and skim off the foam.",
+    "text": "Put the chicken in a pot with {2 l} cold water, bring to the boil and skim off the foam.",
     "timerSeconds": 600
    },
    {
@@ -4042,14 +4042,14 @@
   ],
   "steps": [
    {
-    "text": "Bring 2 l water with the stock cubes to the boil. Add diced onion, carrots and pepper and simmer.",
+    "text": "Bring {2 l} water with the stock cubes to the boil. Add diced onion, carrots and pepper and simmer.",
     "timerSeconds": 600
    },
    {
     "text": "Mix the mince with the rinsed rice, egg, half the chopped parsley, salt and pepper."
    },
    {
-    "text": "Roll small meatballs (about 25) with wet hands and drop them into the simmering broth."
+    "text": "Roll small meatballs (about {25}) with wet hands and drop them into the simmering broth."
    },
    {
     "text": "Add the chopped tomatoes and simmer gently until the rice in the meatballs is cooked.",
@@ -4163,7 +4163,7 @@
     "text": "Grate the onion and garlic and mix with the mince, egg, chopped dill and parsley, salt and pepper."
    },
    {
-    "text": "Shape 8 oval patties and roll them in flour."
+    "text": "Shape {8} oval patties and roll them in flour."
    },
    {
     "text": "Fry the patties in oil on medium heat, turning a few times, until cooked through.",
@@ -4268,11 +4268,11 @@
     "timerSeconds": 480
    },
    {
-    "text": "Stir in garlic and paprika, add the tomatoes and 300 ml water. Cover and simmer until tender.",
+    "text": "Stir in garlic and paprika, add the tomatoes and {300 ml} water. Cover and simmer until tender.",
     "timerSeconds": 3600
    },
    {
-    "text": "For the mămăligă: bring 1.2 l salted water to the boil and whisk in the cornmeal in a thin stream."
+    "text": "For the mămăligă: bring {1.2 l} salted water to the boil and whisk in the cornmeal in a thin stream."
    },
    {
     "text": "Cook the mămăligă on low heat, stirring often, until thick and smooth. Stir in the butter.",
@@ -4341,14 +4341,14 @@
   ],
   "steps": [
    {
-    "text": "Knead flour, 300 ml warm water, 2 tbsp oil and salt into a soft dough. Cover and rest.",
+    "text": "Knead flour, {300 ml} warm water, {2 tbsp} oil and salt into a soft dough. Cover and rest.",
     "timerSeconds": 1800
    },
    {
     "text": "Drain the cottage cheese, then mix it with crumbled feta, the eggs and chopped dill."
    },
    {
-    "text": "Divide the dough into 10 balls. Stretch each very thin on an oiled table."
+    "text": "Divide the dough into {10} balls. Stretch each very thin on an oiled table."
    },
    {
     "text": "Spread filling over each sheet, fold the edges in to a square parcel and flatten gently."

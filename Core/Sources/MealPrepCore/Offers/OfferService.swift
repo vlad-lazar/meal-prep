@@ -23,6 +23,9 @@ public struct OfferService: Sendable {
     let client: TjekClient
     let cache: OfferCache
     let maxConcurrent: Int
+    /// After this many failures with no success at all, the network is treated as down and the remaining
+    /// terms are served from cache only (a captive portal would otherwise cost terms × timeout).
+    let giveUpAfterFailures = 6
 
     public init(client: TjekClient, cache: OfferCache, maxConcurrent: Int = 4) {
         self.client = client
@@ -42,24 +45,31 @@ public struct OfferService: Sendable {
         var outcomes: [TermOutcome] = []
         await withTaskGroup(of: TermOutcome.self) { group in
             var pending = terms.makeIterator()
+            var failures = 0, successes = 0
             for _ in 0..<maxConcurrent {
                 guard let term = pending.next() else { break }
                 group.addTask { await fetch(term, near: origin, radius: radius) }
             }
             while let outcome = await group.next() {
                 outcomes.append(outcome)
+                if case .live = outcome { successes += 1 } else { failures += 1 }
                 if let term = pending.next() {
-                    group.addTask { await fetch(term, near: origin, radius: radius) }
+                    let networkLooksDown = successes == 0 && failures >= giveUpAfterFailures
+                    group.addTask { await fetch(term, near: origin, radius: radius, cacheOnly: networkLooksDown) }
                 }
             }
         }
         return merge(outcomes)
     }
 
-    func fetch(_ term: String, near origin: Coordinate, radius: Int) async -> TermOutcome {
+    func fetch(_ term: String, near origin: Coordinate, radius: Int, cacheOnly: Bool = false) async -> TermOutcome {
         let key = OfferCache.key(term: term, near: origin)
         let cached = await cache.entry(for: key)
         if let cached, await cache.isFresh(cached) { return .live(cached.offers) }
+        if cacheOnly {
+            if let cached { return .cached(cached.offers, cached.fetchedAt) }
+            return .failed
+        }
         do {
             let offers = try await client.searchOffers(term, near: origin, radius: radius)
                 .filter { Chain(dealerId: $0.dealerId) != nil }

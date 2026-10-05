@@ -42,6 +42,14 @@ struct OfferIndexTests {
         #expect(direct == indexed)
     }
 
+    @Test func quotesIncludePantryOverrides() {
+        let quoter = MealQuoter(pricer: BasketPricer(catalog: Fixtures.catalog, matcher: matcher))
+        let index = OfferIndex(offers: offers, ingredients: Fixtures.catalog.ingredientList, matcher: matcher)
+        let without = quoter.quote(Fixtures.curry, chains: [.lidl], index: index)
+        let with = quoter.quote(Fixtures.curry, chains: [.lidl], index: index, pantryOverrides: ["rapeseed-oil"])
+        #expect(approx(with.costPerPortion - without.costPerPortion, 30.0 / 1000.0 * 25 / 4))
+    }
+
     @Test func emptyIndex() {
         #expect(OfferIndex.empty.best(for: "rice", chain: .netto) == nil)
         #expect(OfferIndex.empty.chains.isEmpty)

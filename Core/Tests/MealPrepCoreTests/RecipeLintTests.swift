@@ -34,6 +34,14 @@ struct RecipeLintTests {
         }
     }
 
+    @Test func stepTokensAreValid() {
+        for recipe in catalog.recipes {
+            for step in recipe.steps {
+                #expect(StepText.invalidTokens(in: step.text).isEmpty, "\(recipe.id): \(step.text)")
+            }
+        }
+    }
+
     @Test func videosAreShortAndWellFormed() {
         for recipe in catalog.recipes {
             guard let video = recipe.video else { continue }
